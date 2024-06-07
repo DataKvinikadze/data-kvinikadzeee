@@ -1,0 +1,119 @@
+main {
+  #section-1 {
+    background-color: #0e0e0e;
+    .section-container {
+      max-width: 1440px;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      margin: 0 auto;
+      .flex-wrap {
+        max-width: 1110px;
+        display: flex;
+        align-items: center;
+        .left-side {
+          flex: 0.4;
+          .text-content {
+            span {
+              padding-bottom: 24px;
+            }
+            h2 {
+              padding-bottom: 24px;
+            }
+            p {
+              padding-bottom: 40px;
+              max-width: 349px;
+              line-height: 25px;
+            }
+            button {
+              padding: 15px 30px;
+              background-color: #d87d4a;
+              border: none;
+            }
+            button:hover {
+              background-color: #fbaf85;
+              transition: 250ms;
+            }
+          }
+        }
+        .right-side {
+          flex: 0.6;
+        }
+      }
+    }
+  }
+
+  #section-2 {
+    padding-top: 200px;
+    .section-container {
+      max-width: 1440px;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto;
+      .grid {
+        display: grid;
+        grid-template-columns: 350px 350px 350px;
+        grid-template-rows: 204px;
+        grid-column-gap: 30px;
+      }
+      .section-content {
+        max-width: 1110px;
+        width: 100%;
+        .mini-box {
+          max-width: 350px;
+          height: 204px;
+          background-color: #f1f1f1;
+          border-radius: 8px;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          padding-top: 116px;
+          position: relative;
+          img {
+            position: absolute;
+            top: -80px;
+          }
+          span {
+            padding-bottom: 15px;
+          }
+          a:hover {
+            color: #d87d4a;
+          }
+        }
+      }
+    }
+  }
+  #section-3 {
+    padding-top: 112px;
+    .section-container {
+      max-width: 1440px;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      margin: 0 auto;
+      .flex-wrap {
+        max-width: 1110px;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        .left-side {
+          flex: 1;
+          h3 {
+            max-width: 445px;
+            width: 100%;
+            padding-bottom: 32px;
+          }
+          p {
+            max-width: 445px;
+            width: 100%;
+          }
+        }
+        .right-side {
+          flex: 1;
+        }
+      }
+    }
+  }
+}
