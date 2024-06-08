@@ -2,6 +2,7 @@ main {
   #section-1 {
     background-color: $mainBlack;
     .section-container {
+      overflow-x: hidden;
       max-width: 1440px;
       width: 100%;
       display: flex;
@@ -24,7 +25,7 @@ main {
           justify-content: center;
         }
         .left-side {
-          flex: 0.4;
+          flex: 1;
           @include responsive(tablet) {
             z-index: 2;
             flex: 1;
@@ -58,7 +59,7 @@ main {
           }
         }
         .right-side {
-          flex: 0.6;
+          flex: 1;
           @include responsive(tablet) {
             position: absolute;
             z-index: 1;
