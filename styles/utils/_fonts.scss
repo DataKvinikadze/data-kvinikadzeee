@@ -98,3 +98,27 @@ main {
     }
   }
 }
+
+footer {
+  .footer-container {
+    .footer-content {
+      a {
+        color: #ffffff;
+        font-size: 13px;
+        font-weight: bold;
+        letter-spacing: 2px;
+      }
+      p {
+        color: #ffffff;
+        opacity: 0.5;
+        font-size: 15px;
+        line-height: 25px;
+      }
+      span {
+        color: #ffffff;
+        opacity: 0.5;
+        font-size: 15px;
+      }
+    }
+  }
+}
