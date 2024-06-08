@@ -215,6 +215,14 @@ footer .footer-container .footer-content a {
   font-weight: bold;
   letter-spacing: 2px;
 }
+footer .footer-container .footer-content a:hover {
+  color: #fbaf85;
+  transition: 250ms;
+}
+footer .footer-container .footer-content a:hover .icon path {
+  fill: #fbaf85;
+  transition: 250ms;
+}
 footer .footer-container .footer-content p {
   color: #ffffff;
   opacity: 0.5;
@@ -253,7 +261,7 @@ header .header-container .header-content .cart {
   width: 24px;
   height: 20px;
 }
-header .header-container .header-content:hover path {
+header .header-container .header-content .cart:hover path {
   fill: #fbaf85;
   transition: 250ms;
 }
@@ -347,6 +355,7 @@ main #section-2 .section-container .section-content .mini-box span {
 }
 main #section-2 .section-container .section-content .mini-box a:hover {
   color: #fbaf85;
+  transition: 250ms;
 }
 main #section-3 {
   padding-top: 112px;

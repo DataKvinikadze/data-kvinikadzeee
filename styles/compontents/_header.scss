@@ -22,12 +22,11 @@ header {
       .cart {
         width: 24px;
         height: 20px;
-      }
-      &:hover {
-        path {
-          fill: $hoverOrange;
-          transition: 250ms;
-          // uketesad gavaketeb
+        &:hover {
+          path {
+            fill: $hoverOrange;
+            transition: 250ms;
+          }
         }
       }
     }

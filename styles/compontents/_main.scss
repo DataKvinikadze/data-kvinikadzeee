@@ -79,8 +79,11 @@ main {
           span {
             padding-bottom: 15px;
           }
-          a:hover {
-            color: $hoverOrange;
+          a {
+            &:hover {
+              color: $hoverOrange;
+              transition: 250ms;
+            }
           }
         }
       }

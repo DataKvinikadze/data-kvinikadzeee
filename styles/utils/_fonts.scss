@@ -107,6 +107,16 @@ footer {
         font-size: 13px;
         font-weight: bold;
         letter-spacing: 2px;
+        &:hover {
+          color: $hoverOrange;
+          transition: 250ms;
+          .icon {
+            path {
+              fill: $hoverOrange;
+              transition: 250ms;
+            }
+          }
+        }
       }
       p {
         color: $mainWhite;
