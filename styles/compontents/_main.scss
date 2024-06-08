@@ -1,6 +1,6 @@
 main {
   #section-1 {
-    background-color: #0e0e0e;
+    background-color: $mainBlack;
     .section-container {
       max-width: 1440px;
       width: 100%;
@@ -27,11 +27,11 @@ main {
             }
             button {
               padding: 15px 30px;
-              background-color: #d87d4a;
+              background-color: $mainOrange;
               border: none;
             }
             button:hover {
-              background-color: #fbaf85;
+              background-color: $hoverOrange;
               transition: 250ms;
             }
           }
@@ -65,7 +65,7 @@ main {
         .mini-box {
           max-width: 350px;
           height: 204px;
-          background-color: #f1f1f1;
+          background-color: $miniBlock;
           border-radius: 8px;
           display: flex;
           flex-direction: column;
@@ -80,7 +80,7 @@ main {
             padding-bottom: 15px;
           }
           a:hover {
-            color: #d87d4a;
+            color: $hoverOrange;
           }
         }
       }

@@ -6,13 +6,13 @@ header {
           ul {
             li {
               a {
-                color: #ffffff;
+                color: $mainWhite;
                 font-size: 13px;
                 font-weight: bold;
                 letter-spacing: 2px;
               }
               a:hover {
-                color: #d87d4a;
+                color: $hoverOrange;
                 transition: 250ms;
               }
             }
@@ -31,23 +31,23 @@ main {
           span {
             font-size: 14px;
             opacity: 50%;
-            color: #ffffff;
+            color: $mainWhite;
             letter-spacing: 10px;
           }
           h2 {
             font-size: 56px;
             font-weight: bold;
-            color: #ffffff;
+            color: $mainWhite;
             letter-spacing: 2px;
           }
           p {
             font-size: 15px;
-            color: #ffffff;
+            color: $mainWhite;
             opacity: 0.75;
           }
           button {
             font-size: 13px;
-            color: #ffffff;
+            color: $mainWhite;
             letter-spacing: 1px;
             font-weight: bold;
           }
@@ -58,13 +58,13 @@ main {
       .section-container {
         .section-content {
           span {
-            color: #000000;
+            color: $mainBlack;
             font-size: 18px;
             font-weight: bold;
             letter-spacing: 1.29px;
           }
           a {
-            color: #000000;
+            color: $mainBlack;
             opacity: 0.5;
             font-weight: bold;
             letter-spacing: 1px;
@@ -82,13 +82,13 @@ main {
             font-weight: bold;
             line-height: 44px;
             letter-spacing: 1.43px;
-            color: #000000;
+            color: $mainBlack;
             .best {
-              color: #d87d4a;
+              color: $bestSpan;
             }
           }
           p {
-            color: #000000;
+            color: $mainBlack;
             opacity: 0.5;
             font-size: 15px;
             line-height: 25px;
@@ -103,19 +103,19 @@ footer {
   .footer-container {
     .footer-content {
       a {
-        color: #ffffff;
+        color: $mainWhite;
         font-size: 13px;
         font-weight: bold;
         letter-spacing: 2px;
       }
       p {
-        color: #ffffff;
+        color: $mainWhite;
         opacity: 0.5;
         font-size: 15px;
         line-height: 25px;
       }
       span {
-        color: #ffffff;
+        color: $mainWhite;
         opacity: 0.5;
         font-size: 15px;
       }

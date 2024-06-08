@@ -1,19 +1,16 @@
 footer {
-  background-color: black;
+  background-color: $mainBlack;
   .footer-container {
     max-width: 1440px;
     width: 100%;
     height: 365px;
     margin: 0 auto;
     padding-top: 75px;
-    color: white;
     display: flex;
     justify-content: center;
-
     .footer-content {
       max-width: 1110px;
       width: 100%;
-
       .flex-wrap {
         display: flex;
         justify-content: space-between;
