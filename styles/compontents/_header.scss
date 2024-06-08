@@ -8,16 +8,41 @@ header {
     display: flex;
     justify-content: center;
 
+    @include responsive(tablet) {
+      max-width: 768px;
+      height: 90px;
+    }
     .header-content {
       max-width: 1110px;
       width: 100%;
       display: flex;
       justify-content: space-between;
       align-items: center;
+      @include responsive(tablet) {
+        max-width: 689px;
+      }
+
+      .logo-container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        height: 25px;
+        max-width: 201px;
+        width: 100%;
+        .menu-btn {
+          display: none;
+          @include responsive(tablet) {
+            display: block;
+          }
+        }
+      }
 
       .nav-bar {
         max-width: 423px;
         width: 100%;
+        @include responsive(tablet) {
+          display: none;
+        }
       }
       .cart {
         width: 24px;
@@ -37,5 +62,8 @@ header {
     height: 1px;
     margin: 0 auto;
     background-color: $underline;
+    @include responsive(tablet) {
+      max-width: 689px;
+    }
   }
 }

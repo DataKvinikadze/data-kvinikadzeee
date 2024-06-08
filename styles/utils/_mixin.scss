@@ -1,7 +1,7 @@
 $l-pc: 1420px; // large PC screen size
 $pc: 1260px; // PC screen size.
 $l-tablet: 1024px; // tablet screen size
-$tablet: 1100px; // Tablet screen size.
+$tablet: 768px; // Tablet screen size.
 $phone: 375px; // Phone screen size.
 $s-phone: 360px; // Small Screen size.
 $tablet-max: $tablet - 1;
@@ -21,7 +21,7 @@ $pc-max: $pc - 1;
       @content;
     }
   } @else if $media == tablet {
-    @media only screen and (max-width: $pc-max) {
+    @media only screen and (max-width: $tablet) {
       @content;
     }
   } @else if $media == phone {
