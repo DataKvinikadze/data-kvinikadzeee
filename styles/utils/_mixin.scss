@@ -25,10 +25,6 @@ $pc-max: $pc - 1;
       @content;
     }
   } @else if $media == phone {
-    @media only screen and (max-width: $tablet-max) {
-      @content;
-    }
-  } @else if $media == small_phone {
     @media only screen and (max-width: $phone) {
       @content;
     }
