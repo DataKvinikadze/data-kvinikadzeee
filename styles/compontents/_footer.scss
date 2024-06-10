@@ -31,16 +31,27 @@ footer {
           }
         }
         .nav-bar {
-          min-width: 400px;
+          max-width: 400px;
           width: 100%;
           @include responsive(tablet) {
             max-width: 427px;
           }
           @include responsive(phone) {
             max-width: 108px;
+            width: 100%;
             order: 1;
-            ul {
+          }
+
+          nav {
+            @include responsive(phone) {
+              max-width: 108px;
+            }
+          }
+          ul {
+            @include responsive(phone) {
               height: 148px;
+              max-width: 108px;
+              width: 100%;
               flex-direction: column;
               text-align: center;
             }
@@ -62,7 +73,6 @@ footer {
           }
         }
         .about {
-          // max-height: 150px;
           max-width: 540px;
           width: 100%;
           @include responsive(tablet) {
@@ -74,8 +84,8 @@ footer {
             order: 2;
           }
         }
-        .copy-rights {
-          order: 4;
+        .copy-right {
+          order: 5;
         }
       }
 
