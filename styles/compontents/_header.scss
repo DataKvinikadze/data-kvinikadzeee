@@ -1,12 +1,23 @@
 header {
-  background-color: #0e0e0e;
+  background-color: $mainBlack;
   .header-container {
-    background-color: #0e0e0e;
+    background-color: $mainBlack;
     margin: 0 auto;
     max-width: 1440px;
+    width: 100%;
     height: 100px;
     display: flex;
     justify-content: center;
+
+    @include responsive(tablet) {
+      max-width: 768px;
+      height: 90px;
+    }
+
+    @include responsive(phone) {
+      max-width: 375px;
+      height: 90px;
+    }
 
     .header-content {
       max-width: 1110px;
@@ -14,35 +25,70 @@ header {
       display: flex;
       justify-content: space-between;
       align-items: center;
+      @include responsive(tablet) {
+        max-width: 689px;
+      }
+      @include responsive(phone) {
+        max-width: 327px;
+      }
+
+      .logo-container {
+        height: 25px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        @include responsive(tablet) {
+          max-width: 201px;
+          width: 100%;
+        }
+
+        @include responsive(phone) {
+          max-width: 235px;
+        }
+        .menu-btn {
+          display: none;
+          @include responsive(tablet) {
+            display: block;
+          }
+          @include responsive(phone) {
+            display: block;
+          }
+        }
+      }
 
       .nav-bar {
         max-width: 423px;
         width: 100%;
-        nav {
-          ul {
-            display: flex;
-            justify-content: space-between;
-          }
+        @include responsive(tablet) {
+          display: none;
+        }
+        @include responsive(phone) {
+          display: none;
         }
       }
       .cart {
         width: 24px;
         height: 20px;
-      }
-      &:hover {
-        path {
-          fill: #d87d4a;
-          transition: 250ms;
-          // uketesad gavaketeb
+        &:hover {
+          path {
+            fill: $hoverOrange;
+            transition: 250ms;
+          }
         }
       }
     }
   }
   .underline {
+    margin: 0 auto;
     max-width: 1110px;
     width: 100%;
     height: 1px;
-    margin: 0 auto;
-    background-color: #979797;
+    background-color: $underline;
+    @include responsive(tablet) {
+      max-width: 689px;
+    }
+    @include responsive(phone) {
+      max-width: 375px;
+    }
   }
 }
