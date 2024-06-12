@@ -87,7 +87,9 @@ main {
         .right-side {
           flex: 1;
           img {
-            width: 100%;
+            position: relative;
+            left: 50%;
+            transform: translateX(-50%);
           }
           @include responsive(tablet) {
             position: absolute;
@@ -235,8 +237,6 @@ main {
         }
         .left-side {
           flex: 1;
-          max-width: 445px;
-          width: 100%;
           @include responsive(tablet) {
             display: flex;
             flex-direction: column;
@@ -261,8 +261,7 @@ main {
         }
         .right-side {
           flex: 1;
-          max-width: 540px;
-          width: 100%;
+
           display: flex;
           justify-content: center;
           align-items: center;

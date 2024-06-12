@@ -20,17 +20,12 @@ header {
     }
 
     .header-content {
-      max-width: 1110px;
+      max-width: 1150px;
       width: 100%;
+      padding: 0px 20px;
       display: flex;
       justify-content: space-between;
       align-items: center;
-      @include responsive(tablet) {
-        max-width: 689px;
-      }
-      @include responsive(phone) {
-        max-width: 327px;
-      }
 
       .logo-container {
         height: 25px;
@@ -45,6 +40,7 @@ header {
         @include responsive(phone) {
           max-width: 235px;
         }
+
         .menu-btn {
           display: none;
           @include responsive(tablet) {

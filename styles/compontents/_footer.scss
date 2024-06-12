@@ -98,7 +98,7 @@ footer {
         row-gap: 44px;
         @include responsive(tablet) {
           grid-template-columns: auto auto;
-          grid-template-rows: 25px 25px 75px 48px;
+          grid-template-rows: 25px 25px auto 48px;
           row-gap: 32px;
           column-gap: normal;
         }
