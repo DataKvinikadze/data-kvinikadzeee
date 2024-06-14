@@ -5,3 +5,7 @@ menuBtn.addEventListener("click", () => {
 });
 
 AOS.init();
+
+
+// Swiper
+
