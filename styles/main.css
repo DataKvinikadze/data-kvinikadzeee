@@ -666,6 +666,7 @@ main #section-4 .section-container {
   display: flex;
   justify-content: center;
   margin: 0 auto;
+  padding-bottom: 120px;
 }
 main #section-4 .section-container .section-content {
   position: relative;
@@ -721,7 +722,7 @@ main #section-4 .section-container .section-content .swiper .swiper-wrapper .swi
   line-height: 20px;
   color: #000000;
 }
-main #section-4 .section-container .section-content .swiper .swiper-wrapper .swiper-slide .slide-content .card .note {
+main #section-4 .section-container .section-content .swiper .swiper-wrapper .swiper-slide .slide-content .card .note p {
   font-size: 16px;
   line-height: 22px;
   color: rgba(0, 0, 0, 0.6);
@@ -745,7 +746,7 @@ main #section-4 .section-container .section-content .swiper .swiper-button-next 
   right: 0px;
 }
 main #section-4 .section-container .section-content .swiper .swiper-button-prev {
-  left: 1052px;
+  left: 93.7%;
 }
 
 footer {
