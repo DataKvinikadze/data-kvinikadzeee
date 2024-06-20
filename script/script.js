@@ -31,10 +31,6 @@ let days = document.querySelector(".dayDif");
 let hours = document.querySelector(".hourDif");
 let minutes = document.querySelector(".minutDif");
 let seconds = document.querySelector(".secondDif");
-console.log(days);
-console.log(hours);
-console.log(minutes);
-console.log(seconds);
 // saboloo ricxvi
 
 let endDate = new Date("2024-06-30 23:59:59");
@@ -66,7 +62,6 @@ setInterval(() => {
   let differenceInSeconds = endSeconds - currentSeconds;
   seconds.textContent = differenceInSeconds;
   let differenceInMonths = EndMonth - currentMonth;
-  console.log(differenceInMonths);
   // aq tu tveebshi moxda cvlileba differenceInDays emateba gasuli tvis dgeebis raodenoba
   if (differenceInMonths > 0) {
     differenceInDay = differenceInDay + 30 * differenceInMonths;

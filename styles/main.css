@@ -337,10 +337,10 @@ header .underline {
   }
 }
 
-main #section-1 {
+.main-page main #section-1 {
   background-color: #101010;
 }
-main #section-1 .section-container {
+.main-page main #section-1 .section-container {
   overflow-x: hidden;
   margin: 0 auto;
   max-width: 1440px;
@@ -350,40 +350,40 @@ main #section-1 .section-container {
   justify-content: center;
 }
 @media only screen and (max-width: 768px) {
-  main #section-1 .section-container {
+  .main-page main #section-1 .section-container {
     max-width: 768px;
     height: 639px;
   }
 }
 @media only screen and (max-width: 420px) {
-  main #section-1 .section-container {
+  .main-page main #section-1 .section-container {
     max-width: 375px;
   }
 }
-main #section-1 .section-container .flex-wrap {
+.main-page main #section-1 .section-container .flex-wrap {
   max-width: 1110px;
   width: 100%;
   display: flex;
   align-items: center;
 }
 @media only screen and (max-width: 768px) {
-  main #section-1 .section-container .flex-wrap {
+  .main-page main #section-1 .section-container .flex-wrap {
     justify-content: center;
     max-width: 689px;
     position: relative;
   }
 }
 @media only screen and (max-width: 420px) {
-  main #section-1 .section-container .flex-wrap {
+  .main-page main #section-1 .section-container .flex-wrap {
     max-width: 328px;
     width: 100%;
   }
 }
-main #section-1 .section-container .flex-wrap .left-side {
+.main-page main #section-1 .section-container .flex-wrap .left-side {
   flex: 1;
 }
 @media only screen and (max-width: 768px) {
-  main #section-1 .section-container .flex-wrap .left-side {
+  .main-page main #section-1 .section-container .flex-wrap .left-side {
     z-index: 2;
     flex: 1;
     display: flex;
@@ -391,86 +391,86 @@ main #section-1 .section-container .flex-wrap .left-side {
   }
 }
 @media only screen and (max-width: 420px) {
-  main #section-1 .section-container .flex-wrap .left-side {
+  .main-page main #section-1 .section-container .flex-wrap .left-side {
     z-index: 2;
     flex: 1;
   }
 }
 @media only screen and (max-width: 768px) {
-  main #section-1 .section-container .flex-wrap .left-side .text-content {
+  .main-page main #section-1 .section-container .flex-wrap .left-side .text-content {
     max-width: 379px;
     width: 100%;
     text-align: center;
   }
 }
 @media only screen and (max-width: 420px) {
-  main #section-1 .section-container .flex-wrap .left-side .text-content {
+  .main-page main #section-1 .section-container .flex-wrap .left-side .text-content {
     max-width: 328px;
   }
 }
-main #section-1 .section-container .flex-wrap .left-side .text-content span {
+.main-page main #section-1 .section-container .flex-wrap .left-side .text-content span {
   padding-bottom: 24px;
 }
 @media only screen and (max-width: 420px) {
-  main #section-1 .section-container .flex-wrap .left-side .text-content span {
+  .main-page main #section-1 .section-container .flex-wrap .left-side .text-content span {
     padding-bottom: 16px;
   }
 }
-main #section-1 .section-container .flex-wrap .left-side .text-content h2 {
+.main-page main #section-1 .section-container .flex-wrap .left-side .text-content h2 {
   padding-bottom: 24px;
 }
 @media only screen and (max-width: 420px) {
-  main #section-1 .section-container .flex-wrap .left-side .text-content h2 {
+  .main-page main #section-1 .section-container .flex-wrap .left-side .text-content h2 {
     padding-bottom: 24px;
   }
 }
-main #section-1 .section-container .flex-wrap .left-side .text-content p {
+.main-page main #section-1 .section-container .flex-wrap .left-side .text-content p {
   padding-bottom: 40px;
   max-width: 349px;
   line-height: 25px;
 }
 @media only screen and (max-width: 420px) {
-  main #section-1 .section-container .flex-wrap .left-side .text-content p {
+  .main-page main #section-1 .section-container .flex-wrap .left-side .text-content p {
     padding-bottom: 28px;
   }
 }
-main #section-1 .section-container .flex-wrap .left-side .text-content button {
+.main-page main #section-1 .section-container .flex-wrap .left-side .text-content button {
   padding: 15px 30px;
   background-color: #d87d4a;
   border: none;
 }
-main #section-1 .section-container .flex-wrap .left-side .text-content button:hover {
+.main-page main #section-1 .section-container .flex-wrap .left-side .text-content button:hover {
   background-color: #fbaf85;
   transition: 250ms;
 }
-main #section-1 .section-container .flex-wrap .right-side {
+.main-page main #section-1 .section-container .flex-wrap .right-side {
   flex: 1;
 }
-main #section-1 .section-container .flex-wrap .right-side img {
+.main-page main #section-1 .section-container .flex-wrap .right-side img {
   position: relative;
   left: 50%;
   transform: translateX(-50%);
 }
 @media only screen and (max-width: 768px) {
-  main #section-1 .section-container .flex-wrap .right-side {
+  .main-page main #section-1 .section-container .flex-wrap .right-side {
     position: absolute;
     z-index: 1;
   }
 }
-main #section-2 {
+.main-page main #section-2 {
   padding-top: 200px;
 }
 @media only screen and (max-width: 768px) {
-  main #section-2 {
+  .main-page main #section-2 {
     padding-top: 100px;
   }
 }
 @media only screen and (max-width: 420px) {
-  main #section-2 {
+  .main-page main #section-2 {
     padding-top: 92px;
   }
 }
-main #section-2 .section-container {
+.main-page main #section-2 .section-container {
   max-width: 1440px;
   width: 100%;
   display: flex;
@@ -479,16 +479,16 @@ main #section-2 .section-container {
   margin: 0 auto;
 }
 @media only screen and (max-width: 768px) {
-  main #section-2 .section-container {
+  .main-page main #section-2 .section-container {
     max-width: 768px;
   }
 }
 @media only screen and (max-width: 420px) {
-  main #section-2 .section-container {
+  .main-page main #section-2 .section-container {
     max-width: 327px;
   }
 }
-main #section-2 .section-container .grid {
+.main-page main #section-2 .section-container .grid {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 204px;
@@ -496,34 +496,34 @@ main #section-2 .section-container .grid {
        column-gap: 30px;
 }
 @media only screen and (max-width: 768px) {
-  main #section-2 .section-container .grid {
+  .main-page main #section-2 .section-container .grid {
     -moz-column-gap: 10px;
          column-gap: 10px;
   }
 }
 @media only screen and (max-width: 420px) {
-  main #section-2 .section-container .grid {
+  .main-page main #section-2 .section-container .grid {
     height: 631px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
   }
 }
-main #section-2 .section-container .section-content {
+.main-page main #section-2 .section-container .section-content {
   max-width: 1110px;
   width: 100%;
 }
 @media only screen and (max-width: 768px) {
-  main #section-2 .section-container .section-content {
+  .main-page main #section-2 .section-container .section-content {
     max-width: 689px;
   }
 }
 @media only screen and (max-width: 420px) {
-  main #section-2 .section-container .section-content {
+  .main-page main #section-2 .section-container .section-content {
     max-width: 327px;
   }
 }
-main #section-2 .section-container .section-content .mini-box {
+.main-page main #section-2 .section-container .section-content .mini-box {
   background-color: #f1f1f1;
   max-width: 350px;
   height: 204px;
@@ -536,56 +536,56 @@ main #section-2 .section-container .section-content .mini-box {
   position: relative;
 }
 @media only screen and (max-width: 768px) {
-  main #section-2 .section-container .section-content .mini-box {
+  .main-page main #section-2 .section-container .section-content .mini-box {
     max-width: 223px;
     height: 165px;
     padding-top: 88px;
   }
 }
 @media only screen and (max-width: 420px) {
-  main #section-2 .section-container .section-content .mini-box {
+  .main-page main #section-2 .section-container .section-content .mini-box {
     max-width: 327px;
   }
 }
-main #section-2 .section-container .section-content .mini-box img {
+.main-page main #section-2 .section-container .section-content .mini-box img {
   position: absolute;
   top: -80px;
   width: 115px;
   height: 150px;
 }
 @media only screen and (max-width: 768px) {
-  main #section-2 .section-container .section-content .mini-box img {
+  .main-page main #section-2 .section-container .section-content .mini-box img {
     top: -52px;
     width: 90px;
     height: 90px;
   }
 }
-main #section-2 .section-container .section-content .mini-box span {
+.main-page main #section-2 .section-container .section-content .mini-box span {
   padding-bottom: 15px;
 }
 @media only screen and (max-width: 768px) {
-  main #section-2 .section-container .section-content .mini-box span {
+  .main-page main #section-2 .section-container .section-content .mini-box span {
     padding-bottom: 17px;
   }
 }
-main #section-2 .section-container .section-content .mini-box a:hover {
+.main-page main #section-2 .section-container .section-content .mini-box a:hover {
   color: #fbaf85;
   transition: 250ms;
 }
-main #section-3 {
+.main-page main #section-3 {
   padding: 112px 0px 200px 0px;
 }
 @media only screen and (max-width: 768px) {
-  main #section-3 {
+  .main-page main #section-3 {
     padding: 96px 0px 150px 0px;
   }
 }
 @media only screen and (max-width: 420px) {
-  main #section-3 {
+  .main-page main #section-3 {
     padding: 40px 0px 100px 0px;
   }
 }
-main #section-3 .section-container {
+.main-page main #section-3 .section-container {
   max-width: 1440px;
   width: 100%;
   display: flex;
@@ -593,40 +593,40 @@ main #section-3 .section-container {
   margin: 0 auto;
 }
 @media only screen and (max-width: 768px) {
-  main #section-3 .section-container {
+  .main-page main #section-3 .section-container {
     max-width: 689px;
     height: 633px;
   }
 }
 @media only screen and (max-width: 420px) {
-  main #section-3 .section-container {
+  .main-page main #section-3 .section-container {
     max-width: 327px;
     height: 698px;
   }
 }
-main #section-3 .section-container .flex-wrap {
+.main-page main #section-3 .section-container .flex-wrap {
   max-width: 1110px;
   width: 100%;
   display: flex;
   align-items: center;
 }
 @media only screen and (max-width: 768px) {
-  main #section-3 .section-container .flex-wrap {
+  .main-page main #section-3 .section-container .flex-wrap {
     height: 633px;
     flex-direction: column;
     justify-content: space-between;
   }
 }
 @media only screen and (max-width: 420px) {
-  main #section-3 .section-container .flex-wrap {
+  .main-page main #section-3 .section-container .flex-wrap {
     height: 698px;
   }
 }
-main #section-3 .section-container .flex-wrap .left-side {
+.main-page main #section-3 .section-container .flex-wrap .left-side {
   flex: 1;
 }
 @media only screen and (max-width: 768px) {
-  main #section-3 .section-container .flex-wrap .left-side {
+  .main-page main #section-3 .section-container .flex-wrap .left-side {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -636,31 +636,31 @@ main #section-3 .section-container .flex-wrap .left-side {
   }
 }
 @media only screen and (max-width: 420px) {
-  main #section-3 .section-container .flex-wrap .left-side {
+  .main-page main #section-3 .section-container .flex-wrap .left-side {
     max-width: 327px;
   }
 }
-main #section-3 .section-container .flex-wrap .left-side h3 {
+.main-page main #section-3 .section-container .flex-wrap .left-side h3 {
   max-width: 445px;
   width: 100%;
   padding-bottom: 32px;
 }
-main #section-3 .section-container .flex-wrap .left-side p {
+.main-page main #section-3 .section-container .flex-wrap .left-side p {
   max-width: 445px;
   width: 100%;
 }
-main #section-3 .section-container .flex-wrap .right-side {
+.main-page main #section-3 .section-container .flex-wrap .right-side {
   flex: 1;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 @media only screen and (max-width: 768px) {
-  main #section-3 .section-container .flex-wrap .right-side img {
+  .main-page main #section-3 .section-container .flex-wrap .right-side img {
     height: 300px;
   }
 }
-main #section-4 .section-container {
+.main-page main #section-4 .section-container {
   max-width: 1440px;
   width: 100%;
   display: flex;
@@ -668,7 +668,7 @@ main #section-4 .section-container {
   margin: 0 auto;
   padding-bottom: 120px;
 }
-main #section-4 .section-container .section-content {
+.main-page main #section-4 .section-container .section-content {
   position: relative;
   max-width: 1110px;
   width: 100%;
@@ -677,35 +677,35 @@ main #section-4 .section-container .section-content {
   flex-direction: column;
   justify-content: space-between;
 }
-main #section-4 .section-container .section-content .header-content {
+.main-page main #section-4 .section-container .section-content .header-content {
   max-width: 1110px;
   width: 100%;
   height: 58px;
   margin: 0 auto;
 }
-main #section-4 .section-container .section-content .header-content h2 {
+.main-page main #section-4 .section-container .section-content .header-content h2 {
   font-size: 48px;
   font-weight: bold;
   color: #000000;
 }
-main #section-4 .section-container .section-content .swiper {
+.main-page main #section-4 .section-container .section-content .swiper {
   max-width: 1110px;
   width: 100%;
   height: 240px;
   position: static;
 }
-main #section-4 .section-container .section-content .swiper .swiper-wrapper {
+.main-page main #section-4 .section-container .section-content .swiper .swiper-wrapper {
   height: inherit;
   width: 100%;
   display: flex;
   justify-content: space-between;
 }
-main #section-4 .section-container .section-content .swiper .swiper-wrapper .swiper-slide {
+.main-page main #section-4 .section-container .section-content .swiper .swiper-wrapper .swiper-slide {
   max-width: 360px;
   width: 100%;
   height: 240px;
 }
-main #section-4 .section-container .section-content .swiper .swiper-wrapper .swiper-slide .slide-content .card {
+.main-page main #section-4 .section-container .section-content .swiper .swiper-wrapper .swiper-slide .slide-content .card {
   max-width: 358px;
   width: 100%;
   height: 240px;
@@ -716,39 +716,39 @@ main #section-4 .section-container .section-content .swiper .swiper-wrapper .swi
   flex-direction: column;
   justify-content: space-between;
 }
-main #section-4 .section-container .section-content .swiper .swiper-wrapper .swiper-slide .slide-content .card .name span {
+.main-page main #section-4 .section-container .section-content .swiper .swiper-wrapper .swiper-slide .slide-content .card .name span {
   font-size: 20px;
   font-weight: bold;
   line-height: 20px;
   color: #000000;
 }
-main #section-4 .section-container .section-content .swiper .swiper-wrapper .swiper-slide .slide-content .card .note p {
+.main-page main #section-4 .section-container .section-content .swiper .swiper-wrapper .swiper-slide .slide-content .card .note p {
   font-size: 16px;
   line-height: 22px;
   color: rgba(0, 0, 0, 0.6);
 }
-main #section-4 .section-container .section-content .swiper .swiper-button-next,
-main #section-4 .section-container .section-content .swiper .swiper-button-prev {
+.main-page main #section-4 .section-container .section-content .swiper .swiper-button-next,
+.main-page main #section-4 .section-container .section-content .swiper .swiper-button-prev {
   color: transparent;
   background: none;
 }
-main #section-4 .section-container .section-content .swiper .swiper-button-next:after,
-main #section-4 .section-container .section-content .swiper .swiper-button-prev:after {
+.main-page main #section-4 .section-container .section-content .swiper .swiper-button-next:after,
+.main-page main #section-4 .section-container .section-content .swiper .swiper-button-prev:after {
   content: none;
 }
-main #section-4 .section-container .section-content .swiper .swiper-button-next,
-main #section-4 .section-container .section-content .swiper .swiper-button-prev {
+.main-page main #section-4 .section-container .section-content .swiper .swiper-button-next,
+.main-page main #section-4 .section-container .section-content .swiper .swiper-button-prev {
   position: absolute;
   top: 34px;
   right: 35px;
 }
-main #section-4 .section-container .section-content .swiper .swiper-button-next {
+.main-page main #section-4 .section-container .section-content .swiper .swiper-button-next {
   right: 0px;
 }
-main #section-4 .section-container .section-content .swiper .swiper-button-prev {
+.main-page main #section-4 .section-container .section-content .swiper .swiper-button-prev {
   left: 93.7%;
 }
-main #section-5 .section-container {
+.main-page main #section-5 .section-container {
   max-width: 1440px;
   width: 100%;
   height: -moz-fit-content;
@@ -758,7 +758,7 @@ main #section-5 .section-container {
   margin: 0 auto;
   padding-bottom: 120px;
 }
-main #section-5 .section-container .section-content {
+.main-page main #section-5 .section-container .section-content {
   max-width: 1110px;
   width: 100%;
   height: 312px;
@@ -766,16 +766,16 @@ main #section-5 .section-container .section-content {
   flex-direction: column;
   justify-content: space-between;
 }
-main #section-5 .section-container .section-content .section-title h2 {
+.main-page main #section-5 .section-container .section-content .section-title h2 {
   font-size: 48px;
   font-weight: bolder;
   color: #000000;
 }
-main #section-5 .section-container .section-content .section-cards {
+.main-page main #section-5 .section-container .section-content .section-cards {
   display: flex;
   justify-content: space-between;
 }
-main #section-5 .section-container .section-content .section-cards .card {
+.main-page main #section-5 .section-container .section-content .section-cards .card {
   border-radius: 22px;
   padding: 46px 36px;
   max-width: 252px;
@@ -783,7 +783,7 @@ main #section-5 .section-container .section-content .section-cards .card {
   height: 199px;
   background-color: #101010;
 }
-main #section-5 .section-container .section-content .section-cards .card .card-content {
+.main-page main #section-5 .section-container .section-content .section-cards .card .card-content {
   max-width: 179px;
   height: 107px;
   display: flex;
@@ -791,11 +791,11 @@ main #section-5 .section-container .section-content .section-cards .card .card-c
   align-items: center;
   justify-content: space-between;
 }
-main #section-5 .section-container .section-content .section-cards .card .card-content .number {
+.main-page main #section-5 .section-container .section-content .section-cards .card .card-content .number {
   font-size: 64px;
   color: #ffffff;
 }
-main #section-5 .section-container .section-content .section-cards .card .card-content .text {
+.main-page main #section-5 .section-container .section-content .section-cards .card .card-content .text {
   color: #ffffff;
   font-size: 16px;
 }
@@ -1029,4 +1029,105 @@ footer .footer-container .footer-content .footer-grid .grid-item-5 {
 }
 .menu-btn.open .menu-btn__burger::after {
   transform: rotate(-45deg) translate(35px, 35px);
+}
+
+.product-page main #section-1 {
+  background-color: #101010;
+}
+.product-page main #section-1 .section-container {
+  margin: 0 auto;
+  max-width: 1440px;
+  width: 100%;
+  height: 240px;
+  display: flex;
+  justify-content: center;
+}
+.product-page main #section-1 .section-container .section-content {
+  max-width: 1110px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.product-page main #section-1 .section-container .section-content h1 {
+  font-size: 40px;
+  color: #ffffff;
+  letter-spacing: 1.43px;
+  line-height: 44px;
+}
+.product-page main #section-2 .section-container {
+  margin: 0 auto;
+  max-width: 1440px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.product-page main #section-2 .section-container .section-content {
+  max-width: 1110px;
+  width: 100%;
+}
+.product-page main #section-2 .section-container .section-content .products {
+  width: inherit;
+  display: flex;
+  flex-direction: column;
+}
+.product-page main #section-2 .section-container .section-content .products .product {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.product-page main #section-2 .section-container .section-content .products .product .product-text {
+  max-width: 445px;
+  width: 100%;
+  min-height: 343px;
+}
+.product-page main #section-2 .section-container .section-content .products .product .product-text .product-span {
+  font-size: 14px;
+  color: #d87d4a;
+  letter-spacing: 10px;
+}
+.product-page main #section-2 .section-container .section-content .products .product .product-text .product-header {
+  font-size: 40px;
+  font-weight: bold;
+  line-height: 44px;
+  letter-spacing: 1.43px;
+  padding: 16px 0px 32px 0px;
+}
+.product-page main #section-2 .section-container .section-content .products .product .product-text .product-info {
+  font-size: 15px;
+  line-height: 25px;
+  opacity: 0.5;
+  color: #000000;
+  padding-bottom: 40px;
+}
+.product-page main #section-2 .section-container .section-content .products .product .product-text .product-button {
+  padding: 15px 30px;
+  border: none;
+  background-color: #d87d4a;
+  color: #ffffff;
+  font-size: 13px;
+  letter-spacing: 1px;
+  font-weight: bold;
+}
+.product-page main #section-2 .section-container .section-content .products .product:nth-child(even) {
+  flex-direction: row-reverse;
+}
+.product-page main #pegination {
+  margin: 0 auto;
+  max-width: 1440px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.product-page main #pegination .buttons {
+  max-width: 114px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 100px 0px;
+}
+.product-page main #pegination .buttons button {
+  background-color: #ffffff;
+  border-radius: 4px;
+  border: 1px solid black;
 }/*# sourceMappingURL=main.css.map */
