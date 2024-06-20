@@ -1067,9 +1067,12 @@ footer .footer-container .footer-content .footer-grid .grid-item-5 {
   width: 100%;
 }
 .product-page main #section-2 .section-container .section-content .products {
+  margin-top: 160px;
+  height: 1280px;
   width: inherit;
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
 }
 .product-page main #section-2 .section-container .section-content .products .product {
   display: flex;
