@@ -58,6 +58,9 @@ function productsToDisplay() {
     productInfo.textContent = element.description;
     productButton.textContent = "SEE PRODUCT";
 
+    productButton.addEventListener("click", () => {
+      viewMore(element.id);
+    });
     // appending
 
     // textDiv
@@ -89,3 +92,7 @@ nextButton.addEventListener("click", function () {
     productsToDisplay();
   }
 });
+
+function viewMore(productId) {
+  window.location.href = `../productpage/moreInfo/index.html?id=${productId}`;
+}

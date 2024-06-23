@@ -1,0 +1,26 @@
+main {
+  #go-back {
+    padding-top: 79px;
+    .go-back {
+      max-width: 1150px;
+      width: 100%;
+      margin: 0 auto;
+      display: flex;
+      padding: 0px 20px;
+      a {
+        color: #000000;
+        opacity: 0.5;
+      }
+    }
+  }
+  #product-info {
+    .section-container {
+      margin: 0 auto;
+      max-width: 1440px;
+      width: 100%;
+      height: 100px;
+      display: flex;
+      justify-content: center;
+    }
+  }
+}

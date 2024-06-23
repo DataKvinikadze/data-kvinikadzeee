@@ -22,7 +22,18 @@ const swiper = new Swiper(".swiper", {
     prevEl: ".swiper-button-prev",
   },
 
-  slidesPerView: 3,
+  breakpoints: {
+    // ჩაშენებული responsive
+    375: {
+      slidesPerView: 1,
+    },
+    768: {
+      slidesPerView: 2,
+    },
+    1440: {
+      slidesPerView: 3,
+    },
+  },
 });
 
 // Date difference
