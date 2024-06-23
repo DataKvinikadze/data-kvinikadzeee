@@ -94,5 +94,5 @@ nextButton.addEventListener("click", function () {
 });
 
 function viewMore(productId) {
-  window.location.href = `../productpage/moreInfo/index.html?id=${productId}`;
+  window.location.href = `./../productpage/moreInfo/index.html?id=${productId}`;
 }
