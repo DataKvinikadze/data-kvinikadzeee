@@ -37,27 +37,53 @@ fetch(`../../json/products.json`)
     productDescriptionDiv.appendChild(productHeader);
     productDescriptionDiv.appendChild(productInfo);
     productDescriptionDiv.appendChild(productPrice);
-    productDescriptionDiv.appendChild(productPrice);
 
     productImgDiv.appendChild(productImage);
 
     // buttons
-    let amount = document.querySelector(".amount");
-    let minusButton = document.querySelector(".minus");
-    let plusButton = document.querySelector(".plus");
+    let quantityCart = document.createElement("div");
+    quantityCart.classList.add("quantity-cart");
+    productDescriptionDiv.appendChild(quantityCart);
 
-    let x = 0;
-    amount.textContent = x;
-    minusButton.addEventListener("click", () => {
-      if (x > 0) {
-        x--;
-        amount.textContent = x;
+    let quantityDiv = document.createElement("div");
+    quantityDiv.classList.add("quantity-div");
+
+    let decrementButton = document.createElement("button");
+    decrementButton.classList.add("decrement-btn");
+    let incrementButton = document.createElement("button");
+    incrementButton.classList.add("increment-btn");
+    decrementButton.textContent = "-";
+    incrementButton.textContent = "+";
+
+    let quantityInput = document.createElement("input");
+    quantityInput.type = "number";
+    quantityInput.value = 1;
+    quantityInput.min = 1;
+    quantityInput.id = `quantityInput-${currentProduct}`;
+
+    quantityCart.appendChild(quantityDiv);
+    quantityDiv.appendChild(decrementButton);
+    quantityDiv.appendChild(quantityInput);
+    quantityDiv.appendChild(incrementButton);
+
+    incrementButton.addEventListener("click", () => {
+      quantityInput.value++;
+    });
+
+    decrementButton.addEventListener("click", () => {
+      if (quantityInput.value != 1) {
+        quantityInput.value--;
       }
     });
-    plusButton.addEventListener("click", () => {
-      x++;
-      amount.textContent = x;
-    });
+
+    // add to cart button
+    let addToCart = document.createElement("div");
+    let cartButton = document.createElement("button");
+    cartButton.textContent = "ADD TO CART";
+
+    addToCart.appendChild(cartButton);
+    quantityCart.appendChild(addToCart);
+
     // third section
     let featuresDescriptionDiv = document.querySelector(".section-description");
 
@@ -70,12 +96,4 @@ fetch(`../../json/products.json`)
     featuresDescription.textContent = currentProduct.features;
 
     // fourth section
-    let gridDiv = document.querySelector(".grid");
-
-    let imgOne = document.createElement("img");
-    let imgTwo = document.createElement("img");
-    let imgThree = document.createElement("img");
-    // imgOne.src = `../../assets/product/secondaryImages/`
-    // imgTwo
-    // imgThree
   });

@@ -1268,50 +1268,13 @@ main #product .section-container .section-content .product-description .product-
   color: #000000;
   letter-spacing: 1.29px;
 }
-main #product .section-container .section-content .product-description .buttons {
+main #product .section-container .section-content .product-description .quantity-cart {
   padding-top: 47px;
-  order: 1;
   display: flex;
   align-items: center;
   justify-content: space-between;
   max-width: 296px;
   width: 100%;
-}
-main #product .section-container .section-content .product-description .buttons .cart {
-  padding: 15px 30px;
-  background-color: #d87d4a;
-  color: #ffffff;
-  border: none;
-  letter-spacing: 1px;
-  font-weight: bold;
-  font-size: 13px;
-}
-main #product .section-container .section-content .product-description .buttons .quantity {
-  background-color: #f1f1f1;
-  height: 48px;
-  max-width: 89px;
-  width: 100%;
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-  cursor: pointer;
-}
-main #product .section-container .section-content .product-description .buttons .quantity .minus {
-  font-size: 13px;
-  letter-spacing: 1px;
-  color: #000000;
-  opacity: 0.25;
-}
-main #product .section-container .section-content .product-description .buttons .quantity .plus {
-  font-size: 13px;
-  letter-spacing: 1px;
-  color: #000000;
-  opacity: 0.25;
-}
-main #product .section-container .section-content .product-description .buttons .quantity .amount {
-  font-weight: bold;
-  font-size: 13px;
-  letter-spacing: 1px;
 }
 main #features {
   padding-top: 160px;
