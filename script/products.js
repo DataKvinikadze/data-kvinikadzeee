@@ -7,7 +7,7 @@ let currentPage = 1;
 let products = [];
 const limit = 2;
 
-fetch("../json/products.json")
+fetch("./json/products.json")
   .then((res) => res.json())
   .then((data) => {
     console.log(data);
@@ -32,7 +32,7 @@ function productsToDisplay() {
     // adding images
     let imgDiv = document.createElement("div");
     let productImg = document.createElement("img");
-    productImg.src = `../assets/product/${element.img}`;
+    productImg.src = `./assets/product/${element.img}`;
 
     // adding classes for images
     imgDiv.classList.add("image-div");
@@ -94,5 +94,5 @@ nextButton.addEventListener("click", function () {
 });
 
 function viewMore(productId) {
-  window.location.href = `./../productpage/moreInfo/index.html?id=${productId}`;
+  window.location.href = `./product.html?id=${productId}`;
 }

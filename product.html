@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="../../styles/main.css" />
+    <link rel="stylesheet" href="./styles/main.css" />
     <title>Document</title>
   </head>
   <body>
@@ -15,7 +15,7 @@
               <div class="menu-btn__burger"></div>
             </div>
             <div class="logo">
-              <a href="#">
+              <a href="../../index.html">
                 <img src="../../assets/png/audiophile-2-_1_.webp" alt="Logo" />
               </a>
             </div>
@@ -24,7 +24,7 @@
             <nav>
               <ul>
                 <li><a href="../../index.html">HOME</a></li>
-                <li><a href="./productpage/index.html">PRODUCTS</a></li>
+                <li><a href="../index.html">PRODUCTS</a></li>
                 <li><a href="">FEEDBACK</a></li>
                 <li><a href="">SALES</a></li>
               </ul>
@@ -55,6 +55,11 @@
     </header>
 
     <main>
+      <div class="pop-up">
+        <span class="close-btn">&times;</span>
+        <p>Your cart items will be displayed here.</p>
+      </div>
+
       <section id="goBack">
         <div class="go-back">
           <a href="../index.html"> Go back </a>
@@ -86,7 +91,8 @@
       </section>
     </main>
 
-    <link rel="stylesheet" href="../../json/products.json" />
-    <script src="../../script/product.js"></script>
+    <link rel="stylesheet" href="./json/products.json" />
+    <script src="./script/popup.js"></script>
+    <script src="./script/product.js"></script>
   </body>
 </html>

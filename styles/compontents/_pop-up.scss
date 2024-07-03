@@ -1,3 +1,124 @@
+.pop-up {
+  padding: 32px 31px 30px 33px;
+  opacity: 0;
+  visibility: hidden;
+  position: fixed;
+  max-width: 377px;
+  width: 100%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #f8f8f8;
+  border: 1px solid #ddd;
+  padding: 10px;
+  z-index: 2;
+  transition: opacity 0.5s, visibility 0s 0.5s;
+
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 25px 1fr 25px 48px;
+  row-gap: 32px;
+  .popup-header {
+    grid-row: 1;
+    max-width: 313px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .product-list {
+    grid-row: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: fit-content;
+    .product-item {
+      display: flex;
+      align-items: center;
+      .image-div {
+        width: 64px;
+        height: 64px;
+        border-radius: 8px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #f1f1f1;
+        img {
+          width: 36px;
+        }
+      }
+      .name-price-div {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        max-width: fit-content;
+        width: 100%;
+        .product-name {
+          font-size: 15px;
+          line-height: 25px;
+          font-weight: bold;
+          color: #000000;
+        }
+        .product-price {
+          font-size: 14px;
+          line-height: 25px;
+          font-weight: bold;
+          color: #000000;
+          opacity: 0.5;
+        }
+      }
+      .quantity-remove-div {
+        grid-row: 3;
+        width: 96px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        .quantity {
+          display: block;
+          width: 66px;
+          text-align: center;
+          font-size: 13px;
+          font-weight: bold;
+          color: #000000;
+        }
+        .remove-button {
+          padding: 10px 6px;
+          background-color: #f1f1f1;
+          font-size: 10px;
+          font-weight: bold;
+          color: #000000;
+          letter-spacing: 1px;
+          border: none;
+        }
+      }
+    }
+  }
+  .total-container {
+    max-width: 308px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+  .checkout-div {
+    grid-row: 4;
+    width: 100%;
+    button {
+      padding: 16px 116px;
+      font-size: 13px;
+      letter-spacing: 1px;
+      color: #ffffff;
+      background-color: #d87d4a;
+      border: none;
+    }
+  }
+}
+
+.pop-up.show {
+  opacity: 1;
+  visibility: visible;
+  transition: opacity 0.5s;
+}
+
 .menu-btn {
   position: relative;
   display: flex;

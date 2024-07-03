@@ -2,7 +2,7 @@ const urlParams = new URLSearchParams(window.location.search);
 
 const productId = parseInt(urlParams.get("id"));
 
-fetch(`../../json/products.json`)
+fetch(`./json/products.json`)
   .then((res) => res.json())
   .then((data) => {
     const currentProduct = data[productId - 1];
@@ -14,7 +14,7 @@ fetch(`../../json/products.json`)
     let productDescriptionDiv = document.querySelector(".product-description");
 
     const productImage = document.createElement("img");
-    productImage.src = `../../assets/product/${currentProduct.img}`;
+    productImage.src = `./assets/product/${currentProduct.img}`;
 
     let productHeader = document.createElement("h2");
     let productInfo = document.createElement("p");
@@ -40,13 +40,17 @@ fetch(`../../json/products.json`)
 
     productImgDiv.appendChild(productImage);
 
-    // buttons
+    //! buttons
+
+    //! creating quantity button
     let quantityCart = document.createElement("div");
     quantityCart.classList.add("quantity-cart");
     productDescriptionDiv.appendChild(quantityCart);
 
     let quantityDiv = document.createElement("div");
     quantityDiv.classList.add("quantity-div");
+
+    //! creating increment/decrement button
 
     let decrementButton = document.createElement("button");
     decrementButton.classList.add("decrement-btn");
@@ -55,6 +59,7 @@ fetch(`../../json/products.json`)
     decrementButton.textContent = "-";
     incrementButton.textContent = "+";
 
+    //! creating quantity input
     let quantityInput = document.createElement("input");
     quantityInput.type = "number";
     quantityInput.value = 1;
@@ -66,23 +71,37 @@ fetch(`../../json/products.json`)
     quantityDiv.appendChild(quantityInput);
     quantityDiv.appendChild(incrementButton);
 
+    //! event listeners on increment/decrement buttons
     incrementButton.addEventListener("click", () => {
-      quantityInput.value++;
+      parseInt(quantityInput.value++);
     });
 
     decrementButton.addEventListener("click", () => {
       if (quantityInput.value != 1) {
-        quantityInput.value--;
+        parseInt(quantityInput.value--);
       }
     });
 
-    // add to cart button
+    //! creating add to cart button
+
     let addToCart = document.createElement("div");
+    addToCart.classList.add("add-cart-div");
     let cartButton = document.createElement("button");
+    cartButton.classList.add("add-cart-btn");
     cartButton.textContent = "ADD TO CART";
 
     addToCart.appendChild(cartButton);
     quantityCart.appendChild(addToCart);
+
+    cartButton.addEventListener("click", () => {
+      const quantity = parseInt(quantityInput.value);
+
+      addToCartFunc({ ...currentProduct, quantity });
+    });
+
+    //
+
+    //
 
     // third section
     let featuresDescriptionDiv = document.querySelector(".section-description");
@@ -96,4 +115,27 @@ fetch(`../../json/products.json`)
     featuresDescription.textContent = currentProduct.features;
 
     // fourth section
+    currentProduct.additionalImages.forEach((element, index) => {
+      let sectionDiv = document.querySelector(".grid");
+      const photoDiv = document.createElement("div");
+      photoDiv.classList.add(`grid-item-${index + 1}`);
+      const productImage = document.createElement("img");
+      productImage.src = `./assets/product/secondaryImages/${element}`;
+      photoDiv.appendChild(productImage);
+      sectionDiv.appendChild(photoDiv);
+    });
   });
+
+function addToCartFunc(product) {
+  let cart = JSON.parse(localStorage.getItem("cart")) || [];
+
+  const existingPorductIndex = cart.findIndex((p) => p.id === product.id);
+
+  if (existingPorductIndex >= 0) {
+    cart[existingPorductIndex].quantity += product.quantity;
+  } else {
+    cart.push(product);
+  }
+  localStorage.setItem("cart", JSON.stringify(cart));
+  updateCartPopup();
+}
