@@ -1,5 +1,7 @@
 header {
   background-color: $mainBlack;
+  position: relative;
+  z-index: 2;
   .header-container {
     background-color: $mainBlack;
     margin: 0 auto;

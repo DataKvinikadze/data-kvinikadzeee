@@ -1,10 +1,12 @@
 let shoppingCartIcon = document.querySelector(".cart");
 let closeBtn = document.querySelector(".close-btn");
-
+let overlay = document.querySelector(".overlay");
 // eventlisteneri shoping cartze, rata dawerisas gamochndes/gaqres
 shoppingCartIcon.addEventListener("click", () => {
   let popup = document.querySelector(".pop-up");
   popup.classList.toggle("show");
+  overlay.classList.toggle("show");
+  updateCartPopup();
 });
 
 // igive close buttonze
@@ -17,11 +19,6 @@ closeBtn.addEventListener("click", () => {
 function calculateTotalPrice(cart) {
   //abrunebs
   return cart.reduce((sum, p) => sum + Number(p.quantity) * Number(p.price), 0);
-}
-
-// funqcia romelic raodenobas tvlis
-function calculateTotalQuantity(cart) {
-  return cart.reduce((sum, p) => sum + Number(p.quantity), 0);
 }
 
 // funqcia romelic anaxlebs carts
@@ -43,16 +40,20 @@ function updateCartPopup() {
     // pop-up element section
     const itemElement = document.createElement("div");
     itemElement.classList.add("product-item");
+
+    let productInfo = document.createElement("div");
+    productInfo.classList.add("product-summary");
+
     // img section
     const productImgDiv = document.createElement("div");
-    productImgDiv.classList.add("image-div");
+    productImgDiv.classList.add("image-container");
     const productImg = document.createElement("img");
     productImg.classList.add("product-image");
     productImg.src = `./assets/product/${product.img}`;
 
     // price and name section
     const productNamePriceDiv = document.createElement("div");
-    productNamePriceDiv.classList.add("name-price-div");
+    productNamePriceDiv.classList.add("product-info");
 
     const productName = document.createElement("span");
     productName.classList.add("product-name");
@@ -64,7 +65,7 @@ function updateCartPopup() {
 
     // quantity and remove btn section
     const productQuantityRemoveDiv = document.createElement("div");
-    productQuantityRemoveDiv.classList.add("quantity-remove-div");
+    productQuantityRemoveDiv.classList.add("quantity-controls");
 
     const quantity = document.createElement("span");
     quantity.classList.add("quantity");
@@ -90,8 +91,11 @@ function updateCartPopup() {
 
     productImgDiv.appendChild(productImg);
 
-    itemElement.appendChild(productImgDiv);
-    itemElement.appendChild(productNamePriceDiv);
+    productInfo.appendChild(productImgDiv);
+    productInfo.appendChild(productNamePriceDiv);
+
+    itemElement.appendChild(productInfo);
+
     itemElement.appendChild(productQuantityRemoveDiv);
     productList.appendChild(itemElement);
     popup.appendChild(productList);
@@ -108,6 +112,12 @@ function updateCartPopup() {
   popUpHeader.appendChild(header);
   popUpHeader.appendChild(removeAllBtn);
 
+  removeAllBtn.addEventListener("click", () => {
+    cart = [];
+    localStorage.setItem("cart", JSON.stringify(cart));
+    updateCartPopup();
+  });
+
   let CheckoutDiv = document.createElement("div");
   CheckoutDiv.classList.add("checkout-div");
   let CheckoutBtn = document.createElement("button");
@@ -115,9 +125,9 @@ function updateCartPopup() {
   CheckoutBtn.textContent = "CHECKOUT";
   let TotalContainer = document.createElement("div");
   TotalContainer.classList.add("total-container");
-  let totalPrice = document.createElement("div");
+  let totalPrice = document.createElement("span");
   totalPrice.classList.add("total-price");
-  let totalText = document.createElement("div");
+  let totalText = document.createElement("span");
   totalText.classList.add("total-text");
   totalText.textContent = "TOTAL";
   totalPrice.textContent = `$${total}`;
@@ -127,4 +137,8 @@ function updateCartPopup() {
   popup.prepend(popUpHeader);
   popup.appendChild(TotalContainer);
   popup.appendChild(CheckoutDiv);
+
+  CheckoutBtn.addEventListener("click", () => {
+    window.location.href = "../checkout.html";
+  });
 }
