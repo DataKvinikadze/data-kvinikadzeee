@@ -1701,7 +1701,12 @@ main .background #checkout {
 }
 @media only screen and (max-width: 768px) {
   main .background #checkout {
-    padding: 24px 0px 0px 0px;
+    padding: 24px 0px 116px 0px;
+  }
+}
+@media only screen and (max-width: 420px) {
+  main .background #checkout {
+    padding-bottom: 97px;
   }
 }
 main .background #checkout .section-container {
@@ -1717,26 +1722,37 @@ main .background #checkout .section-container .flex-wrapper {
   padding: 0px 20px;
   display: flex;
   justify-content: space-between;
+  -moz-column-gap: 20px;
+       column-gap: 20px;
 }
 @media only screen and (max-width: 768px) {
   main .background #checkout .section-container .flex-wrapper {
     flex-direction: column;
     row-gap: 32px;
+    -moz-column-gap: 0px;
+         column-gap: 0px;
   }
 }
 main .background #checkout .section-container .flex-wrapper .checkout {
   flex: 2;
   background-color: #ffffff;
-  margin-right: 20px;
   width: 100%;
-  height: 1340px;
   border-radius: 8px;
   padding: 77px 47.5px 64px 48px;
+}
+@media only screen and (max-width: 768px) {
+  main .background #checkout .section-container .flex-wrapper .checkout {
+    padding: 30px 27px 30px 27.5px;
+  }
+}
+@media only screen and (max-width: 420px) {
+  main .background #checkout .section-container .flex-wrapper .checkout {
+    padding: 24px;
+  }
 }
 main .background #checkout .section-container .flex-wrapper .checkout .checkout-content {
   display: flex;
   flex-direction: column;
-  height: 1200px;
 }
 main .background #checkout .section-container .flex-wrapper .checkout .checkout-content .section-title {
   font-size: 32px;
@@ -1758,7 +1774,8 @@ main .background #checkout .section-container .flex-wrapper .checkout .checkout-
   line-height: 25px;
 }
 main .background #checkout .section-container .flex-wrapper .checkout .checkout-content .billing-details .input-field {
-  height: 200px;
+  height: -moz-fit-content;
+  height: fit-content;
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr;
@@ -1766,7 +1783,16 @@ main .background #checkout .section-container .flex-wrapper .checkout .checkout-
   -moz-column-gap: 16px;
        column-gap: 16px;
 }
-main .background #checkout .section-container .flex-wrapper .checkout .checkout-content .billing-details .input-field div {
+@media only screen and (max-width: 420px) {
+  main .background #checkout .section-container .flex-wrapper .checkout .checkout-content .billing-details .input-field {
+    display: flex;
+    flex-direction: column;
+    row-gap: 24px;
+  }
+}
+main .background #checkout .section-container .flex-wrapper .checkout .checkout-content .billing-details .input-field .name,
+main .background #checkout .section-container .flex-wrapper .checkout .checkout-content .billing-details .input-field .email,
+main .background #checkout .section-container .flex-wrapper .checkout .checkout-content .billing-details .input-field .number {
   max-width: 309px;
   width: 100%;
   height: 85px;
@@ -1774,13 +1800,35 @@ main .background #checkout .section-container .flex-wrapper .checkout .checkout-
   flex-direction: column;
   justify-content: space-between;
 }
-main .background #checkout .section-container .flex-wrapper .checkout .checkout-content .billing-details .input-field div span {
+main .background #checkout .section-container .flex-wrapper .checkout .checkout-content .billing-details .input-field .name .input-title,
+main .background #checkout .section-container .flex-wrapper .checkout .checkout-content .billing-details .input-field .email .input-title,
+main .background #checkout .section-container .flex-wrapper .checkout .checkout-content .billing-details .input-field .number .input-title {
+  display: flex;
+  justify-content: space-between;
+}
+main .background #checkout .section-container .flex-wrapper .checkout .checkout-content .billing-details .input-field .name .input-title .id-validation,
+main .background #checkout .section-container .flex-wrapper .checkout .checkout-content .billing-details .input-field .email .input-title .id-validation,
+main .background #checkout .section-container .flex-wrapper .checkout .checkout-content .billing-details .input-field .number .input-title .id-validation {
+  color: #cd2c2c;
+}
+main .background #checkout .section-container .flex-wrapper .checkout .checkout-content .billing-details .input-field .name .input-title .validation,
+main .background #checkout .section-container .flex-wrapper .checkout .checkout-content .billing-details .input-field .email .input-title .validation,
+main .background #checkout .section-container .flex-wrapper .checkout .checkout-content .billing-details .input-field .number .input-title .validation {
+  font-size: 12px;
+  letter-spacing: -0.21px;
+  color: #cd2c2c;
+}
+main .background #checkout .section-container .flex-wrapper .checkout .checkout-content .billing-details .input-field .name .input-title span,
+main .background #checkout .section-container .flex-wrapper .checkout .checkout-content .billing-details .input-field .email .input-title span,
+main .background #checkout .section-container .flex-wrapper .checkout .checkout-content .billing-details .input-field .number .input-title span {
   font-size: 12px;
   letter-spacing: -0.21px;
   font-weight: bold;
   color: #000000;
 }
-main .background #checkout .section-container .flex-wrapper .checkout .checkout-content .billing-details .input-field div input {
+main .background #checkout .section-container .flex-wrapper .checkout .checkout-content .billing-details .input-field .name input,
+main .background #checkout .section-container .flex-wrapper .checkout .checkout-content .billing-details .input-field .email input,
+main .background #checkout .section-container .flex-wrapper .checkout .checkout-content .billing-details .input-field .number input {
   width: 100%;
   height: 60px;
   border: 1px #cfcfcf solid;
@@ -1792,6 +1840,11 @@ main .background #checkout .section-container .flex-wrapper .checkout .checkout-
   font-weight: bold;
   color: #000000;
   opacity: 0.4;
+}
+main .background #checkout .section-container .flex-wrapper .checkout .checkout-content .billing-details .input-field .name .input-validation,
+main .background #checkout .section-container .flex-wrapper .checkout .checkout-content .billing-details .input-field .email .input-validation,
+main .background #checkout .section-container .flex-wrapper .checkout .checkout-content .billing-details .input-field .number .input-validation {
+  border: #cd2c2c 3px solid;
 }
 main .background #checkout .section-container .flex-wrapper .checkout .checkout-content .billing-details .input-field .name {
   grid-row: 1;
@@ -1825,21 +1878,60 @@ main .background #checkout .section-container .flex-wrapper .checkout .checkout-
   row-gap: 25px;
   -moz-column-gap: 16px;
        column-gap: 16px;
-  min-height: 302px;
+  height: -moz-fit-content;
+  height: fit-content;
 }
-main .background #checkout .section-container .flex-wrapper .checkout .checkout-content .shopping-info .input-field div {
+@media only screen and (max-width: 420px) {
+  main .background #checkout .section-container .flex-wrapper .checkout .checkout-content .shopping-info .input-field {
+    display: flex;
+    flex-direction: column;
+    row-gap: 24px;
+  }
+}
+main .background #checkout .section-container .flex-wrapper .checkout .checkout-content .shopping-info .input-field .address,
+main .background #checkout .section-container .flex-wrapper .checkout .checkout-content .shopping-info .input-field .zip,
+main .background #checkout .section-container .flex-wrapper .checkout .checkout-content .shopping-info .input-field .city,
+main .background #checkout .section-container .flex-wrapper .checkout .checkout-content .shopping-info .input-field .country {
+  width: 100%;
   height: 85px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
-main .background #checkout .section-container .flex-wrapper .checkout .checkout-content .shopping-info .input-field div span {
+main .background #checkout .section-container .flex-wrapper .checkout .checkout-content .shopping-info .input-field .address .input-title,
+main .background #checkout .section-container .flex-wrapper .checkout .checkout-content .shopping-info .input-field .zip .input-title,
+main .background #checkout .section-container .flex-wrapper .checkout .checkout-content .shopping-info .input-field .city .input-title,
+main .background #checkout .section-container .flex-wrapper .checkout .checkout-content .shopping-info .input-field .country .input-title {
+  display: flex;
+  justify-content: space-between;
+}
+main .background #checkout .section-container .flex-wrapper .checkout .checkout-content .shopping-info .input-field .address .input-title .id-validation,
+main .background #checkout .section-container .flex-wrapper .checkout .checkout-content .shopping-info .input-field .zip .input-title .id-validation,
+main .background #checkout .section-container .flex-wrapper .checkout .checkout-content .shopping-info .input-field .city .input-title .id-validation,
+main .background #checkout .section-container .flex-wrapper .checkout .checkout-content .shopping-info .input-field .country .input-title .id-validation {
+  color: #cd2c2c;
+}
+main .background #checkout .section-container .flex-wrapper .checkout .checkout-content .shopping-info .input-field .address .input-title .validation,
+main .background #checkout .section-container .flex-wrapper .checkout .checkout-content .shopping-info .input-field .zip .input-title .validation,
+main .background #checkout .section-container .flex-wrapper .checkout .checkout-content .shopping-info .input-field .city .input-title .validation,
+main .background #checkout .section-container .flex-wrapper .checkout .checkout-content .shopping-info .input-field .country .input-title .validation {
+  font-size: 12px;
+  letter-spacing: -0.21px;
+  color: #cd2c2c;
+}
+main .background #checkout .section-container .flex-wrapper .checkout .checkout-content .shopping-info .input-field .address .input-title span,
+main .background #checkout .section-container .flex-wrapper .checkout .checkout-content .shopping-info .input-field .zip .input-title span,
+main .background #checkout .section-container .flex-wrapper .checkout .checkout-content .shopping-info .input-field .city .input-title span,
+main .background #checkout .section-container .flex-wrapper .checkout .checkout-content .shopping-info .input-field .country .input-title span {
   font-size: 12px;
   letter-spacing: -0.21px;
   font-weight: bold;
   color: #000000;
 }
-main .background #checkout .section-container .flex-wrapper .checkout .checkout-content .shopping-info .input-field div input {
+main .background #checkout .section-container .flex-wrapper .checkout .checkout-content .shopping-info .input-field .address input,
+main .background #checkout .section-container .flex-wrapper .checkout .checkout-content .shopping-info .input-field .zip input,
+main .background #checkout .section-container .flex-wrapper .checkout .checkout-content .shopping-info .input-field .city input,
+main .background #checkout .section-container .flex-wrapper .checkout .checkout-content .shopping-info .input-field .country input {
   width: 100%;
   height: 60px;
   border: 1px #cfcfcf solid;
@@ -1851,6 +1943,12 @@ main .background #checkout .section-container .flex-wrapper .checkout .checkout-
   font-weight: bold;
   color: #000000;
   opacity: 0.4;
+}
+main .background #checkout .section-container .flex-wrapper .checkout .checkout-content .shopping-info .input-field .address .input-validation,
+main .background #checkout .section-container .flex-wrapper .checkout .checkout-content .shopping-info .input-field .zip .input-validation,
+main .background #checkout .section-container .flex-wrapper .checkout .checkout-content .shopping-info .input-field .city .input-validation,
+main .background #checkout .section-container .flex-wrapper .checkout .checkout-content .shopping-info .input-field .country .input-validation {
+  border: #cd2c2c 3px solid;
 }
 main .background #checkout .section-container .flex-wrapper .checkout .checkout-content .shopping-info .input-field .address {
   grid-column: 1/3;
@@ -1897,33 +1995,49 @@ main .background #checkout .section-container .flex-wrapper .checkout .checkout-
   line-height: 16px;
   text-decoration: underline;
 }
+main .background #checkout .section-container .flex-wrapper .checkout .checkout-content .payment-details .description {
+  display: flex;
+  flex-direction: column;
+}
 @media only screen and (max-width: 768px) {
   main .background #checkout .section-container .flex-wrapper .checkout .checkout-content .payment-details .description {
-    display: flex;
+    flex-direction: row;
     -moz-column-gap: 25px;
          column-gap: 25px;
   }
 }
+@media only screen and (max-width: 420px) {
+  main .background #checkout .section-container .flex-wrapper .checkout .checkout-content .payment-details .description {
+    flex-direction: column;
+    row-gap: 32px;
+  }
+}
 main .background #checkout .section-container .flex-wrapper .checkout .checkout-content .payment-details .description .card {
-  order: 1;
-  margin: 30px auto 42px;
+  order: -1;
+  padding: 100px 0px 10px 0px;
+  margin: 0 auto;
   max-width: 338px;
   width: 100%;
-  height: 190px;
   background-color: #000000;
   border-radius: 16px;
   position: relative;
-  padding: 100px 0px 18px 0px;
 }
 @media only screen and (max-width: 768px) {
   main .background #checkout .section-container .flex-wrapper .checkout .checkout-content .payment-details .description .card {
+    order: 1;
     max-width: 300px;
-    margin: 0;
+    padding: 88px 0px 15px 0px;
+  }
+}
+@media only screen and (max-width: 420px) {
+  main .background #checkout .section-container .flex-wrapper .checkout .checkout-content .payment-details .description .card {
+    max-width: 220px;
+    padding: 64px 0px 11px 0px;
   }
 }
 main .background #checkout .section-container .flex-wrapper .checkout .checkout-content .payment-details .description .card .card-content {
-  padding: 0px 16px 0px 22px;
-  max-width: 300px;
+  padding: 0 20px;
+  max-width: 340px;
   width: 100%;
 }
 main .background #checkout .section-container .flex-wrapper .checkout .checkout-content .payment-details .description .card .card-content .sim {
@@ -1931,10 +2045,26 @@ main .background #checkout .section-container .flex-wrapper .checkout .checkout-
   left: 28px;
   top: 25px;
 }
+@media only screen and (max-width: 420px) {
+  main .background #checkout .section-container .flex-wrapper .checkout .checkout-content .payment-details .description .card .card-content .sim {
+    top: 18px;
+    left: 18px;
+    width: 13px;
+    height: 13px;
+  }
+}
 main .background #checkout .section-container .flex-wrapper .checkout .checkout-content .payment-details .description .card .card-content .wifi {
   position: absolute;
   left: 55px;
   top: 24px;
+}
+@media only screen and (max-width: 420px) {
+  main .background #checkout .section-container .flex-wrapper .checkout .checkout-content .payment-details .description .card .card-content .wifi {
+    top: 15px;
+    left: 35px;
+    width: 12px;
+    height: 18px;
+  }
 }
 main .background #checkout .section-container .flex-wrapper .checkout .checkout-content .payment-details .description .card .card-content .number {
   color: #ffffff;
@@ -1950,6 +2080,13 @@ main .background #checkout .section-container .flex-wrapper .checkout .checkout-
     word-spacing: 5px;
   }
 }
+@media only screen and (max-width: 420px) {
+  main .background #checkout .section-container .flex-wrapper .checkout .checkout-content .payment-details .description .card .card-content .number {
+    font-size: 12px;
+    line-height: 15px;
+    word-spacing: 3px;
+  }
+}
 main .background #checkout .section-container .flex-wrapper .checkout .checkout-content .payment-details .description .card .card-content .card-logo {
   width: 100%;
   display: flex;
@@ -1961,7 +2098,20 @@ main .background #checkout .section-container .flex-wrapper .checkout .checkout-
   font-size: 14px;
   line-height: 16px;
 }
+@media only screen and (max-width: 420px) {
+  main .background #checkout .section-container .flex-wrapper .checkout .checkout-content .payment-details .description .card .card-content .card-logo .cardholder {
+    font-size: 9px;
+    line-height: 10px;
+  }
+}
+@media only screen and (max-width: 420px) {
+  main .background #checkout .section-container .flex-wrapper .checkout .checkout-content .payment-details .description .card .card-content .card-logo img {
+    width: 26px;
+    height: 15px;
+  }
+}
 main .background #checkout .section-container .flex-wrapper .checkout .checkout-content .payment-details .description .input-field {
+  margin: 41px auto 0px auto;
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr;
@@ -1975,23 +2125,36 @@ main .background #checkout .section-container .flex-wrapper .checkout .checkout-
 @media only screen and (max-width: 768px) {
   main .background #checkout .section-container .flex-wrapper .checkout .checkout-content .payment-details .description .input-field {
     max-width: 309px;
+    margin: 0px;
   }
 }
-main .background #checkout .section-container .flex-wrapper .checkout .checkout-content .payment-details .description .input-field div {
+main .background #checkout .section-container .flex-wrapper .checkout .checkout-content .payment-details .description .input-field .country,
+main .background #checkout .section-container .flex-wrapper .checkout .checkout-content .payment-details .description .input-field .card-number,
+main .background #checkout .section-container .flex-wrapper .checkout .checkout-content .payment-details .description .input-field .date,
+main .background #checkout .section-container .flex-wrapper .checkout .checkout-content .payment-details .description .input-field .code {
   height: 48px;
 }
 @media only screen and (max-width: 768px) {
-  main .background #checkout .section-container .flex-wrapper .checkout .checkout-content .payment-details .description .input-field div {
+  main .background #checkout .section-container .flex-wrapper .checkout .checkout-content .payment-details .description .input-field .country,
+  main .background #checkout .section-container .flex-wrapper .checkout .checkout-content .payment-details .description .input-field .card-number,
+  main .background #checkout .section-container .flex-wrapper .checkout .checkout-content .payment-details .description .input-field .date,
+  main .background #checkout .section-container .flex-wrapper .checkout .checkout-content .payment-details .description .input-field .code {
     height: 56px;
   }
 }
-main .background #checkout .section-container .flex-wrapper .checkout .checkout-content .payment-details .description .input-field div span {
+main .background #checkout .section-container .flex-wrapper .checkout .checkout-content .payment-details .description .input-field .country .input-title span,
+main .background #checkout .section-container .flex-wrapper .checkout .checkout-content .payment-details .description .input-field .card-number .input-title span,
+main .background #checkout .section-container .flex-wrapper .checkout .checkout-content .payment-details .description .input-field .date .input-title span,
+main .background #checkout .section-container .flex-wrapper .checkout .checkout-content .payment-details .description .input-field .code .input-title span {
   font-size: 12px;
   letter-spacing: -0.21px;
   font-weight: bold;
   color: #000000;
 }
-main .background #checkout .section-container .flex-wrapper .checkout .checkout-content .payment-details .description .input-field div input {
+main .background #checkout .section-container .flex-wrapper .checkout .checkout-content .payment-details .description .input-field .country input,
+main .background #checkout .section-container .flex-wrapper .checkout .checkout-content .payment-details .description .input-field .card-number input,
+main .background #checkout .section-container .flex-wrapper .checkout .checkout-content .payment-details .description .input-field .date input,
+main .background #checkout .section-container .flex-wrapper .checkout .checkout-content .payment-details .description .input-field .code input {
   width: 100%;
   height: 100%;
   border: 1px #cfcfcf solid;
@@ -2033,6 +2196,11 @@ main .background #checkout .section-container .flex-wrapper .summary .element {
   width: 100%;
   display: flex;
   justify-content: space-between;
+}
+@media only screen and (max-width: 768px) {
+  main .background #checkout .section-container .flex-wrapper .summary .element {
+    max-width: 623px;
+  }
 }
 main .background #checkout .section-container .flex-wrapper .summary .element .product-info {
   display: flex;
@@ -2088,6 +2256,11 @@ main .background #checkout .section-container .flex-wrapper .summary .total-cont
   justify-content: space-between;
   align-items: center;
 }
+@media only screen and (max-width: 768px) {
+  main .background #checkout .section-container .flex-wrapper .summary .total-container {
+    max-width: 623px;
+  }
+}
 main .background #checkout .section-container .flex-wrapper .summary .total-container .total-text {
   font-size: 15px;
   color: #000000;
@@ -2105,6 +2278,11 @@ main .background #checkout .section-container .flex-wrapper .summary .shipping-c
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+@media only screen and (max-width: 768px) {
+  main .background #checkout .section-container .flex-wrapper .summary .shipping-container {
+    max-width: 623px;
+  }
 }
 main .background #checkout .section-container .flex-wrapper .summary .shipping-container .shipping-text {
   font-size: 15px;
@@ -2124,6 +2302,11 @@ main .background #checkout .section-container .flex-wrapper .summary .grand-cont
   justify-content: space-between;
   align-items: center;
 }
+@media only screen and (max-width: 768px) {
+  main .background #checkout .section-container .flex-wrapper .summary .grand-container {
+    max-width: 623px;
+  }
+}
 main .background #checkout .section-container .flex-wrapper .summary .grand-container .grand-text {
   font-size: 15px;
   color: #000000;
@@ -2139,6 +2322,11 @@ main .background #checkout .section-container .flex-wrapper .summary .checkout-c
   margin-top: 32px;
   max-width: 284px;
   height: 48px;
+}
+@media only screen and (max-width: 768px) {
+  main .background #checkout .section-container .flex-wrapper .summary .checkout-container {
+    max-width: 623px;
+  }
 }
 main .background #checkout .section-container .flex-wrapper .summary .checkout-container button {
   width: 100%;
