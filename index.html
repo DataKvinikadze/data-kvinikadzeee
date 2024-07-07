@@ -30,8 +30,8 @@
               <ul>
                 <li><a href="#">HOME</a></li>
                 <li><a href="./products.html">PRODUCTS</a></li>
-                <li><a href="">FEEDBACK</a></li>
-                <li><a href="">SALES</a></li>
+                <li><a href="#">FEEDBACK</a></li>
+                <li><a href="#">SALES</a></li>
               </ul>
             </nav>
           </div>
@@ -60,6 +60,10 @@
     </header>
     <div class="main-page">
       <main>
+        <div class="pop-up">
+          <span class="close-btn">&times;</span>
+        </div>
+        <div class="view-more"></div>
         <div class="main-container">
           <section id="section-1">
             <div class="section-container">
@@ -72,7 +76,7 @@
                       Experience natural, lifelike audio and exceptional build
                       quality made for the passionate music enthusiast.
                     </p>
-                    <button>See Product</button>
+                    <a href="./products.html"><button>See Product</button></a>
                   </div>
                 </div>
                 <div class="right-side">
@@ -94,7 +98,7 @@
                       alt="headphones"
                     />
                     <span>HEADPHONES</span>
-                    <a href="#"
+                    <a href="./products.html"
                       >SHOP
                       <svg
                         width="8"
@@ -119,7 +123,7 @@
                       alt="speakres"
                     />
                     <span>SPEAKERS</span>
-                    <a href="#"
+                    <a href="./products.html"
                       >SHOP
                       <svg
                         width="8"
@@ -144,7 +148,7 @@
                       alt="earphones"
                     />
                     <span>EARPHONES</span>
-                    <a href="#"
+                    <a href="./products.html"
                       >SHOP
                       <svg
                         width="8"
@@ -327,6 +331,7 @@
           </section>
         </div>
       </main>
+      <div class="overlay"></div>
     </div>
     <footer>
       <div class="footer-container">
@@ -339,9 +344,9 @@
               <nav>
                 <ul>
                   <li><a href="./index.html">HOME</a></li>
-                  <li><a href="#">HEADPHONES</a></li>
-                  <li><a href="#">SPEAKERS</a></li>
-                  <li><a href="#">EARPHONES</a></li>
+                  <li><a href="./products.html">HEADPHONES</a></li>
+                  <li><a href="./products.html">SPEAKERS</a></li>
+                  <li><a href="./products.html">EARPHONES</a></li>
                 </ul>
               </nav>
             </div>
@@ -422,5 +427,6 @@
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="./script/script.js"></script>
+    <script src="./script/popup.js"></script>
   </body>
 </html>

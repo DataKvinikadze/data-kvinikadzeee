@@ -1,283 +1,285 @@
-main {
-  #goBack {
-    padding-top: 79px;
-    @include responsive(tablet) {
-      padding-top: 33px;
-    }
-    @include responsive(phone) {
-      padding-top: 16px;
-    }
-    .go-back {
-      max-width: 1150px;
-      padding: 0px 20px;
-      width: 100%;
-      margin: 0 auto;
-      display: flex;
-      a {
-        color: #000000;
-        opacity: 0.5;
+.product-page {
+  main {
+    #goBack {
+      padding-top: 79px;
+      @include responsive(tablet) {
+        padding-top: 33px;
       }
-    }
-  }
-  #product {
-    padding-top: 56px;
-    @include responsive(tablet) {
-      padding-top: 24px;
-    }
-    @include responsive(phone) {
-      padding-top: 25px;
-    }
-    .section-container {
-      margin: 0 auto;
-      max-width: 1440px;
-      width: 100%;
-      display: flex;
-      justify-content: center;
-      .section-content {
+      @include responsive(phone) {
+        padding-top: 16px;
+      }
+      .go-back {
         max-width: 1150px;
         padding: 0px 20px;
         width: 100%;
+        margin: 0 auto;
         display: flex;
-        align-items: center;
-        justify-content: space-between;
-        @include responsive(phone) {
-          height: 720px;
-          display: flex;
-          flex-direction: column;
-        }
-        .product-image {
-          background-color: #f1f1f1;
-          max-width: 540px;
-          width: 100%;
-          height: 560px;
-          border-radius: 8px;
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          @include responsive(tablet) {
-            max-width: 281px;
-            height: 480px;
-          }
-          @include responsive(phone) {
-            max-width: 327px;
-            height: 327px;
-          }
-          img {
-            width: 350px;
-            @include responsive(tablet) {
-              max-width: 185px;
-            }
-            @include responsive(phone) {
-              max-width: 150px;
-            }
-          }
-        }
-        .product-description {
-          max-width: 445.5px;
-          width: 100%;
-          min-height: 407px;
-          display: flex;
-          flex-direction: column;
-          @include responsive(tablet) {
-            max-width: 357px;
-            min-height: 357px;
-          }
-          @include responsive(phone) {
-          }
-          .product-span {
-            font-size: 14px;
-            letter-spacing: 10px;
-            color: #d87d4a;
-            @include responsive(tablet) {
-              font-size: 12px;
-              letter-spacing: 8px;
-            }
-            @include responsive(phone) {
-              font-size: 14px;
-              letter-spacing: 10px;
-            }
-          }
-          .product-header {
-            padding: 16px 0px 32px 0px;
-            font-size: 40px;
-            letter-spacing: 1.43px;
-            line-height: 44px;
-            font-weight: bold;
-            @include responsive(tablet) {
-              font-size: 28px;
-              line-height: 32px;
-              letter-spacing: 1px;
-            }
-            @include responsive(phone) {
-              font-size: 28px;
-            }
-          }
-          .product-info {
-            padding-bottom: 32px;
-            font-size: 14px;
-            line-height: 25px;
-            color: #000000;
-            opacity: 0.5;
-          }
-
-          .product-price {
-            font-size: 18px;
-            font-weight: bold;
-            color: #000000;
-            letter-spacing: 1.29px;
-          }
-          .quantity-cart {
-            padding-top: 47px;
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            max-width: 296px;
-            width: 100%;
-
-            .quantity-div {
-              max-width: 120px;
-              width: 100%;
-              display: flex;
-              justify-content: space-evenly;
-              background-color: #f1f1f1;
-              height: 48px;
-              button {
-                width: 16px;
-                background-color: transparent;
-                border: none;
-                color: #000000;
-                opacity: 0.25;
-              }
-              input {
-                max-width: 48px;
-                background-color: transparent;
-                border: none;
-                text-align: center;
-                font-weight: bold;
-                font-size: 13px;
-              }
-            }
-            .add-cart-btn {
-              padding: 15px 32px;
-              border: none;
-              background-color: #d87d4a;
-              color: #ffffff;
-              font-size: 13px;
-            }
-          }
-        }
-      }
-    }
-  }
-  #features {
-    padding-top: 160px;
-    @include responsive(phone) {
-      padding-top: 88px;
-    }
-    .section-container {
-      margin: 0 auto;
-      max-width: 1440px;
-      width: 100%;
-      display: flex;
-      justify-content: center;
-      .section-content {
-        max-width: 1150px;
-        padding: 0px 20px;
-        width: 100%;
-        min-height: 318px;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        h2 {
-          font-size: 40px;
-          line-height: 36px;
-          font-weight: bold;
-          letter-spacing: 1.14px;
-          @include responsive(tablet) {
-            font-size: 32px;
-            line-height: 36px;
-            letter-spacing: 1.16px;
-          }
-          @include responsive(phone) {
-            font-size: 24px;
-            letter-spacing: 0.86px;
-          }
-        }
-        p {
-          max-width: 635px;
-          width: 100%;
-          line-height: 25px;
-          font-size: 15px;
+        a {
           color: #000000;
           opacity: 0.5;
         }
       }
     }
-  }
-  #product-images {
-    padding: 160px 0px 153px 0px;
-    @include responsive(phone) {
-      padding: 393px 0px 153px 0px;
-    }
-    .section-container {
-      margin: 0 auto;
-      max-width: 1440px;
-      width: 100%;
-      display: flex;
-      justify-content: center;
-      .section-content {
-        max-width: 1150px;
-        padding: 0px 20px;
+    #product {
+      padding-top: 56px;
+      @include responsive(tablet) {
+        padding-top: 24px;
+      }
+      @include responsive(phone) {
+        padding-top: 25px;
+      }
+      .section-container {
+        margin: 0 auto;
+        max-width: 1440px;
         width: 100%;
-        max-height: 592px;
-        @include responsive(tablet) {
-          min-height: 368px;
+        display: flex;
+        justify-content: center;
+        .section-content {
+          max-width: 1150px;
+          padding: 0px 20px;
+          width: 100%;
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          @include responsive(phone) {
+            height: 720px;
+            display: flex;
+            flex-direction: column;
+          }
+          .product-image {
+            background-color: #f1f1f1;
+            max-width: 540px;
+            width: 100%;
+            height: 560px;
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            @include responsive(tablet) {
+              max-width: 281px;
+              height: 480px;
+            }
+            @include responsive(phone) {
+              max-width: 327px;
+              height: 327px;
+            }
+            img {
+              width: 350px;
+              @include responsive(tablet) {
+                max-width: 185px;
+              }
+              @include responsive(phone) {
+                max-width: 150px;
+              }
+            }
+          }
+          .product-description {
+            max-width: 445.5px;
+            width: 100%;
+            min-height: 407px;
+            display: flex;
+            flex-direction: column;
+            @include responsive(tablet) {
+              max-width: 357px;
+              min-height: 357px;
+            }
+            @include responsive(phone) {
+            }
+            .product-span {
+              font-size: 14px;
+              letter-spacing: 10px;
+              color: #d87d4a;
+              @include responsive(tablet) {
+                font-size: 12px;
+                letter-spacing: 8px;
+              }
+              @include responsive(phone) {
+                font-size: 14px;
+                letter-spacing: 10px;
+              }
+            }
+            .product-header {
+              padding: 16px 0px 32px 0px;
+              font-size: 40px;
+              letter-spacing: 1.43px;
+              line-height: 44px;
+              font-weight: bold;
+              @include responsive(tablet) {
+                font-size: 28px;
+                line-height: 32px;
+                letter-spacing: 1px;
+              }
+              @include responsive(phone) {
+                font-size: 28px;
+              }
+            }
+            .product-info {
+              padding-bottom: 32px;
+              font-size: 14px;
+              line-height: 25px;
+              color: #000000;
+              opacity: 0.5;
+            }
+
+            .product-price {
+              font-size: 18px;
+              font-weight: bold;
+              color: #000000;
+              letter-spacing: 1.29px;
+            }
+            .quantity-cart {
+              padding-top: 47px;
+              display: flex;
+              align-items: center;
+              justify-content: space-between;
+              max-width: 296px;
+              width: 100%;
+
+              .quantity-div {
+                max-width: 120px;
+                width: 100%;
+                display: flex;
+                justify-content: space-evenly;
+                background-color: #f1f1f1;
+                height: 48px;
+                button {
+                  width: 16px;
+                  background-color: transparent;
+                  border: none;
+                  color: #000000;
+                  opacity: 0.25;
+                }
+                input {
+                  max-width: 48px;
+                  background-color: transparent;
+                  border: none;
+                  text-align: center;
+                  font-weight: bold;
+                  font-size: 13px;
+                }
+              }
+              .add-cart-btn {
+                padding: 15px 32px;
+                border: none;
+                background-color: #d87d4a;
+                color: #ffffff;
+                font-size: 13px;
+              }
+            }
+          }
         }
       }
-      .grid {
-        display: grid;
-        grid-template-columns: 4fr 6fr;
-        grid-template-rows: 1fr 1fr;
-        row-gap: 32px;
-        column-gap: 30px;
-        @include responsive(phone) {
-          min-height: 756px;
-          row-gap: 0px;
+    }
+    #features {
+      padding-top: 160px;
+      @include responsive(phone) {
+        padding-top: 88px;
+      }
+      .section-container {
+        margin: 0 auto;
+        max-width: 1440px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        .section-content {
+          max-width: 1150px;
+          padding: 0px 20px;
+          width: 100%;
+          min-height: 318px;
           display: flex;
           flex-direction: column;
           justify-content: space-between;
+          h2 {
+            font-size: 40px;
+            line-height: 36px;
+            font-weight: bold;
+            letter-spacing: 1.14px;
+            @include responsive(tablet) {
+              font-size: 32px;
+              line-height: 36px;
+              letter-spacing: 1.16px;
+            }
+            @include responsive(phone) {
+              font-size: 24px;
+              letter-spacing: 0.86px;
+            }
+          }
+          p {
+            max-width: 635px;
+            width: 100%;
+            line-height: 25px;
+            font-size: 15px;
+            color: #000000;
+            opacity: 0.5;
+          }
         }
-        img {
+      }
+    }
+    #product-images {
+      padding: 160px 0px 153px 0px;
+      @include responsive(phone) {
+        padding: 393px 0px 153px 0px;
+      }
+      .section-container {
+        margin: 0 auto;
+        max-width: 1440px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        .section-content {
+          max-width: 1150px;
+          padding: 0px 20px;
           width: 100%;
-          height: 100%;
-        }
-        .grid-item-1 {
-          grid-row: 1;
-          grid-column: 1;
-          img {
-            @include responsive(phone) {
-              max-width: 327px;
-              height: 174px;
-            }
+          max-height: 592px;
+          @include responsive(tablet) {
+            min-height: 368px;
           }
         }
-        .grid-item-2 {
-          grid-row: 2;
-          grid-column: 1;
+        .grid {
+          display: grid;
+          grid-template-columns: 4fr 6fr;
+          grid-template-rows: 1fr 1fr;
+          row-gap: 32px;
+          column-gap: 30px;
+          @include responsive(phone) {
+            min-height: 756px;
+            row-gap: 0px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+          }
           img {
-            @include responsive(phone) {
-              max-width: 327px;
-              height: 174px;
+            width: 100%;
+            height: 100%;
+          }
+          .grid-item-1 {
+            grid-row: 1;
+            grid-column: 1;
+            img {
+              @include responsive(phone) {
+                max-width: 327px;
+                height: 174px;
+              }
             }
           }
-        }
-        .grid-item-3 {
-          grid-row: 1 / 3;
-          grid-column: 2;
-          img {
-            @include responsive(phone) {
-              max-width: 327px;
-              height: 368px;
+          .grid-item-2 {
+            grid-row: 2;
+            grid-column: 1;
+            img {
+              @include responsive(phone) {
+                max-width: 327px;
+                height: 174px;
+              }
+            }
+          }
+          .grid-item-3 {
+            grid-row: 1 / 3;
+            grid-column: 2;
+            img {
+              @include responsive(phone) {
+                max-width: 327px;
+                height: 368px;
+              }
             }
           }
         }

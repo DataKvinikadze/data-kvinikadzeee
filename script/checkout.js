@@ -63,13 +63,16 @@ checkOutBtn.textContent = "CONTINUE & PAY";
 
 checkOutContainer.appendChild(checkOutBtn);
 
+const elementContainer = document.createElement("div");
+elementContainer.classList.add("element-container");
+
 cart.forEach((element) => {
   console.log(element);
+
   const elementDiv = document.createElement("div");
   const productInfo = document.createElement("div");
   const imageDiv = document.createElement("div");
   const productNamePrice = document.createElement("div");
-
   const quantityDiv = document.createElement("div");
 
   elementDiv.classList.add("element");
@@ -100,7 +103,6 @@ cart.forEach((element) => {
 
   productInfo.appendChild(imageDiv);
   productInfo.appendChild(productNamePrice);
-  console.log(productInfo);
 
   // quantity
 
@@ -114,14 +116,101 @@ cart.forEach((element) => {
   elementDiv.appendChild(productInfo);
   elementDiv.appendChild(quantityDiv);
 
-  summary.appendChild(summaryTitle);
-  summary.appendChild(elementDiv);
-  summary.appendChild(totalContainer);
-  summary.appendChild(shippingContainer);
-  summary.appendChild(grandTotalContainer);
-  summary.appendChild(checkOutContainer);
+  elementContainer.appendChild(elementDiv);
 });
+
+summary.appendChild(summaryTitle);
+summary.appendChild(elementContainer);
+summary.appendChild(totalContainer);
+summary.appendChild(shippingContainer);
+summary.appendChild(grandTotalContainer);
+summary.appendChild(checkOutContainer);
 
 function calculateTotalPrice(cart) {
   return cart.reduce((sum, p) => sum + Number(p.quantity) * Number(p.price), 0);
 }
+
+// creating checkout popup
+
+const popUp = document.querySelector(".checkout-pop-up");
+
+const imageContainer = document.createElement("div");
+const image = document.createElement("img");
+image.src = "../assets/svg/pop.svg";
+
+imageContainer.classList.add("image-container");
+image.classList.add("popup-image");
+
+imageContainer.appendChild(image);
+
+const textContainer = document.createElement("div");
+const thankText = document.createElement("span");
+thankText.textContent = "THANK YOU FOR YOUR ORDER";
+
+textContainer.classList.add("text-container");
+thankText.classList.add("thank-text");
+
+textContainer.appendChild(thankText);
+
+const subContainer = document.createElement("div");
+const subText = document.createElement("span");
+subText.textContent = "You will receive an email confirmation shortly.";
+
+subContainer.classList.add("sub-container");
+subText.classList.add("sub-text");
+
+subContainer.appendChild(subText);
+
+const buttonContainer = document.createElement("div");
+const button = document.createElement("button");
+button.textContent = "BACK TO HOME";
+
+buttonContainer.classList.add("button-container");
+button.classList.add("back-to-home");
+
+buttonContainer.appendChild(button);
+
+popUp.appendChild(imageContainer);
+
+popUp.appendChild(textContainer);
+popUp.appendChild(subContainer);
+popUp.appendChild(buttonContainer);
+
+// validation
+let form = document.querySelector("form");
+let input = document.querySelectorAll("input");
+let validationText = document.querySelectorAll(".error");
+console.log(validationText);
+checkOutBtn.addEventListener("click", (event) => {
+  let valid = true;
+  event.preventDefault();
+  input.forEach((element, index) => {
+    const inputValue = element.value.trim();
+
+    if (inputValue === "") {
+      validationText[index].textContent = "You Must Enter a Value!";
+      validationText[index].style.display = "block";
+      input[index].classList.add("input-validation");
+      valid = false;
+    } else {
+      // inputLable[index].classList.remove("id-error");
+      validationText[index].style.display = "none";
+      input[index].classList.remove("input-validation");
+    }
+  });
+  if (valid == true) {
+    popUp.classList.add("shown");
+    const overlay = document.querySelector(".overlay");
+    overlay.classList.add("shown");
+  }
+});
+
+button.addEventListener("click", () => {
+  form.submit();
+  popUp.classList.remove("shown");
+  window.location.href = "../index.html";
+  let cart = JSON.parse(localStorage.getItem("cart") || []);
+  cart = [];
+  localStorage.setItem("cart", JSON.stringify(cart));
+  updateCartPopup();
+});

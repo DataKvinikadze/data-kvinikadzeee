@@ -1,4 +1,4 @@
-.overlay.show {
+div.overlay.show {
   position: fixed;
   top: 0px;
   left: 0px;
@@ -226,4 +226,36 @@
       }
     }
   }
+}
+.view-more {
+  max-width: 398px;
+  height: 804px;
+  position: absolute;
+  width: 100%;
+  background-color: #101010;
+  z-index: 4;
+  display: flex;
+  flex-direction: column;
+  row-gap: 22px;
+  padding-top: 26px;
+  display: none;
+  div {
+    padding-left: 39px;
+    background-color: #101010;
+    max-width: 345px;
+    width: 100%;
+    height: 78px;
+    column-gap: 30px;
+    display: flex;
+    align-items: center;
+    span {
+      color: #e5e5e5;
+      font-size: 23px;
+      letter-spacing: -1px;
+    }
+  }
+}
+
+.show-view {
+  display: block;
 }

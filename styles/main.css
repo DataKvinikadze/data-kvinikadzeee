@@ -974,7 +974,7 @@ footer .footer-container .footer-content .footer-grid .grid-item-5 {
   }
 }
 
-.overlay.show {
+div.overlay.show {
   position: fixed;
   top: 0px;
   left: 0px;
@@ -1197,6 +1197,40 @@ footer .footer-container .footer-content .footer-grid .grid-item-5 {
   transform: rotate(-45deg) translate(35px, 35px);
 }
 
+.view-more {
+  max-width: 398px;
+  height: 804px;
+  position: absolute;
+  width: 100%;
+  background-color: #101010;
+  z-index: 4;
+  display: flex;
+  flex-direction: column;
+  row-gap: 22px;
+  padding-top: 26px;
+  display: none;
+}
+.view-more div {
+  padding-left: 39px;
+  background-color: #101010;
+  max-width: 345px;
+  width: 100%;
+  height: 78px;
+  -moz-column-gap: 30px;
+       column-gap: 30px;
+  display: flex;
+  align-items: center;
+}
+.view-more div span {
+  color: #e5e5e5;
+  font-size: 23px;
+  letter-spacing: -1px;
+}
+
+.show-view {
+  display: block;
+}
+
 .product-page main #section-1 {
   background-color: #101010;
 }
@@ -1370,51 +1404,51 @@ footer .footer-container .footer-content .footer-grid .grid-item-5 {
   border: 1px solid black;
 }
 
-main #goBack {
+.product-page main #goBack {
   padding-top: 79px;
 }
 @media only screen and (max-width: 768px) {
-  main #goBack {
+  .product-page main #goBack {
     padding-top: 33px;
   }
 }
 @media only screen and (max-width: 420px) {
-  main #goBack {
+  .product-page main #goBack {
     padding-top: 16px;
   }
 }
-main #goBack .go-back {
+.product-page main #goBack .go-back {
   max-width: 1150px;
   padding: 0px 20px;
   width: 100%;
   margin: 0 auto;
   display: flex;
 }
-main #goBack .go-back a {
+.product-page main #goBack .go-back a {
   color: #000000;
   opacity: 0.5;
 }
-main #product {
+.product-page main #product {
   padding-top: 56px;
 }
 @media only screen and (max-width: 768px) {
-  main #product {
+  .product-page main #product {
     padding-top: 24px;
   }
 }
 @media only screen and (max-width: 420px) {
-  main #product {
+  .product-page main #product {
     padding-top: 25px;
   }
 }
-main #product .section-container {
+.product-page main #product .section-container {
   margin: 0 auto;
   max-width: 1440px;
   width: 100%;
   display: flex;
   justify-content: center;
 }
-main #product .section-container .section-content {
+.product-page main #product .section-container .section-content {
   max-width: 1150px;
   padding: 0px 20px;
   width: 100%;
@@ -1423,13 +1457,13 @@ main #product .section-container .section-content {
   justify-content: space-between;
 }
 @media only screen and (max-width: 420px) {
-  main #product .section-container .section-content {
+  .product-page main #product .section-container .section-content {
     height: 720px;
     display: flex;
     flex-direction: column;
   }
 }
-main #product .section-container .section-content .product-image {
+.product-page main #product .section-container .section-content .product-image {
   background-color: #f1f1f1;
   max-width: 540px;
   width: 100%;
@@ -1440,31 +1474,31 @@ main #product .section-container .section-content .product-image {
   justify-content: center;
 }
 @media only screen and (max-width: 768px) {
-  main #product .section-container .section-content .product-image {
+  .product-page main #product .section-container .section-content .product-image {
     max-width: 281px;
     height: 480px;
   }
 }
 @media only screen and (max-width: 420px) {
-  main #product .section-container .section-content .product-image {
+  .product-page main #product .section-container .section-content .product-image {
     max-width: 327px;
     height: 327px;
   }
 }
-main #product .section-container .section-content .product-image img {
+.product-page main #product .section-container .section-content .product-image img {
   width: 350px;
 }
 @media only screen and (max-width: 768px) {
-  main #product .section-container .section-content .product-image img {
+  .product-page main #product .section-container .section-content .product-image img {
     max-width: 185px;
   }
 }
 @media only screen and (max-width: 420px) {
-  main #product .section-container .section-content .product-image img {
+  .product-page main #product .section-container .section-content .product-image img {
     max-width: 150px;
   }
 }
-main #product .section-container .section-content .product-description {
+.product-page main #product .section-container .section-content .product-description {
   max-width: 445.5px;
   width: 100%;
   min-height: 407px;
@@ -1472,29 +1506,29 @@ main #product .section-container .section-content .product-description {
   flex-direction: column;
 }
 @media only screen and (max-width: 768px) {
-  main #product .section-container .section-content .product-description {
+  .product-page main #product .section-container .section-content .product-description {
     max-width: 357px;
     min-height: 357px;
   }
 }
-main #product .section-container .section-content .product-description .product-span {
+.product-page main #product .section-container .section-content .product-description .product-span {
   font-size: 14px;
   letter-spacing: 10px;
   color: #d87d4a;
 }
 @media only screen and (max-width: 768px) {
-  main #product .section-container .section-content .product-description .product-span {
+  .product-page main #product .section-container .section-content .product-description .product-span {
     font-size: 12px;
     letter-spacing: 8px;
   }
 }
 @media only screen and (max-width: 420px) {
-  main #product .section-container .section-content .product-description .product-span {
+  .product-page main #product .section-container .section-content .product-description .product-span {
     font-size: 14px;
     letter-spacing: 10px;
   }
 }
-main #product .section-container .section-content .product-description .product-header {
+.product-page main #product .section-container .section-content .product-description .product-header {
   padding: 16px 0px 32px 0px;
   font-size: 40px;
   letter-spacing: 1.43px;
@@ -1502,31 +1536,31 @@ main #product .section-container .section-content .product-description .product-
   font-weight: bold;
 }
 @media only screen and (max-width: 768px) {
-  main #product .section-container .section-content .product-description .product-header {
+  .product-page main #product .section-container .section-content .product-description .product-header {
     font-size: 28px;
     line-height: 32px;
     letter-spacing: 1px;
   }
 }
 @media only screen and (max-width: 420px) {
-  main #product .section-container .section-content .product-description .product-header {
+  .product-page main #product .section-container .section-content .product-description .product-header {
     font-size: 28px;
   }
 }
-main #product .section-container .section-content .product-description .product-info {
+.product-page main #product .section-container .section-content .product-description .product-info {
   padding-bottom: 32px;
   font-size: 14px;
   line-height: 25px;
   color: #000000;
   opacity: 0.5;
 }
-main #product .section-container .section-content .product-description .product-price {
+.product-page main #product .section-container .section-content .product-description .product-price {
   font-size: 18px;
   font-weight: bold;
   color: #000000;
   letter-spacing: 1.29px;
 }
-main #product .section-container .section-content .product-description .quantity-cart {
+.product-page main #product .section-container .section-content .product-description .quantity-cart {
   padding-top: 47px;
   display: flex;
   align-items: center;
@@ -1534,7 +1568,7 @@ main #product .section-container .section-content .product-description .quantity
   max-width: 296px;
   width: 100%;
 }
-main #product .section-container .section-content .product-description .quantity-cart .quantity-div {
+.product-page main #product .section-container .section-content .product-description .quantity-cart .quantity-div {
   max-width: 120px;
   width: 100%;
   display: flex;
@@ -1542,14 +1576,14 @@ main #product .section-container .section-content .product-description .quantity
   background-color: #f1f1f1;
   height: 48px;
 }
-main #product .section-container .section-content .product-description .quantity-cart .quantity-div button {
+.product-page main #product .section-container .section-content .product-description .quantity-cart .quantity-div button {
   width: 16px;
   background-color: transparent;
   border: none;
   color: #000000;
   opacity: 0.25;
 }
-main #product .section-container .section-content .product-description .quantity-cart .quantity-div input {
+.product-page main #product .section-container .section-content .product-description .quantity-cart .quantity-div input {
   max-width: 48px;
   background-color: transparent;
   border: none;
@@ -1557,29 +1591,29 @@ main #product .section-container .section-content .product-description .quantity
   font-weight: bold;
   font-size: 13px;
 }
-main #product .section-container .section-content .product-description .quantity-cart .add-cart-btn {
+.product-page main #product .section-container .section-content .product-description .quantity-cart .add-cart-btn {
   padding: 15px 32px;
   border: none;
   background-color: #d87d4a;
   color: #ffffff;
   font-size: 13px;
 }
-main #features {
+.product-page main #features {
   padding-top: 160px;
 }
 @media only screen and (max-width: 420px) {
-  main #features {
+  .product-page main #features {
     padding-top: 88px;
   }
 }
-main #features .section-container {
+.product-page main #features .section-container {
   margin: 0 auto;
   max-width: 1440px;
   width: 100%;
   display: flex;
   justify-content: center;
 }
-main #features .section-container .section-content {
+.product-page main #features .section-container .section-content {
   max-width: 1150px;
   padding: 0px 20px;
   width: 100%;
@@ -1588,26 +1622,26 @@ main #features .section-container .section-content {
   flex-direction: column;
   justify-content: space-between;
 }
-main #features .section-container .section-content h2 {
+.product-page main #features .section-container .section-content h2 {
   font-size: 40px;
   line-height: 36px;
   font-weight: bold;
   letter-spacing: 1.14px;
 }
 @media only screen and (max-width: 768px) {
-  main #features .section-container .section-content h2 {
+  .product-page main #features .section-container .section-content h2 {
     font-size: 32px;
     line-height: 36px;
     letter-spacing: 1.16px;
   }
 }
 @media only screen and (max-width: 420px) {
-  main #features .section-container .section-content h2 {
+  .product-page main #features .section-container .section-content h2 {
     font-size: 24px;
     letter-spacing: 0.86px;
   }
 }
-main #features .section-container .section-content p {
+.product-page main #features .section-container .section-content p {
   max-width: 635px;
   width: 100%;
   line-height: 25px;
@@ -1615,33 +1649,33 @@ main #features .section-container .section-content p {
   color: #000000;
   opacity: 0.5;
 }
-main #product-images {
+.product-page main #product-images {
   padding: 160px 0px 153px 0px;
 }
 @media only screen and (max-width: 420px) {
-  main #product-images {
+  .product-page main #product-images {
     padding: 393px 0px 153px 0px;
   }
 }
-main #product-images .section-container {
+.product-page main #product-images .section-container {
   margin: 0 auto;
   max-width: 1440px;
   width: 100%;
   display: flex;
   justify-content: center;
 }
-main #product-images .section-container .section-content {
+.product-page main #product-images .section-container .section-content {
   max-width: 1150px;
   padding: 0px 20px;
   width: 100%;
   max-height: 592px;
 }
 @media only screen and (max-width: 768px) {
-  main #product-images .section-container .section-content {
+  .product-page main #product-images .section-container .section-content {
     min-height: 368px;
   }
 }
-main #product-images .section-container .grid {
+.product-page main #product-images .section-container .grid {
   display: grid;
   grid-template-columns: 4fr 6fr;
   grid-template-rows: 1fr 1fr;
@@ -1650,7 +1684,7 @@ main #product-images .section-container .grid {
        column-gap: 30px;
 }
 @media only screen and (max-width: 420px) {
-  main #product-images .section-container .grid {
+  .product-page main #product-images .section-container .grid {
     min-height: 756px;
     row-gap: 0px;
     display: flex;
@@ -1658,65 +1692,157 @@ main #product-images .section-container .grid {
     justify-content: space-between;
   }
 }
-main #product-images .section-container .grid img {
+.product-page main #product-images .section-container .grid img {
   width: 100%;
   height: 100%;
 }
-main #product-images .section-container .grid .grid-item-1 {
+.product-page main #product-images .section-container .grid .grid-item-1 {
   grid-row: 1;
   grid-column: 1;
 }
 @media only screen and (max-width: 420px) {
-  main #product-images .section-container .grid .grid-item-1 img {
+  .product-page main #product-images .section-container .grid .grid-item-1 img {
     max-width: 327px;
     height: 174px;
   }
 }
-main #product-images .section-container .grid .grid-item-2 {
+.product-page main #product-images .section-container .grid .grid-item-2 {
   grid-row: 2;
   grid-column: 1;
 }
 @media only screen and (max-width: 420px) {
-  main #product-images .section-container .grid .grid-item-2 img {
+  .product-page main #product-images .section-container .grid .grid-item-2 img {
     max-width: 327px;
     height: 174px;
   }
 }
-main #product-images .section-container .grid .grid-item-3 {
+.product-page main #product-images .section-container .grid .grid-item-3 {
   grid-row: 1/3;
   grid-column: 2;
 }
 @media only screen and (max-width: 420px) {
-  main #product-images .section-container .grid .grid-item-3 img {
+  .product-page main #product-images .section-container .grid .grid-item-3 img {
     max-width: 327px;
     height: 368px;
   }
 }
 
-main .background {
+.checkout-page .overlay.shown {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 100vw;
+  height: 100vh;
+  background-color: #000000;
+  opacity: 0.5;
+  z-index: 1;
+}
+.checkout-page main {
   background-color: #f1f1f1;
 }
-main .background #checkout {
+.checkout-page main #goBack {
+  padding-top: 79px;
+}
+@media only screen and (max-width: 768px) {
+  .checkout-page main #goBack {
+    padding-top: 33px;
+  }
+}
+@media only screen and (max-width: 420px) {
+  .checkout-page main #goBack {
+    padding-top: 16px;
+  }
+}
+.checkout-page main #goBack .go-back {
+  max-width: 1150px;
+  padding: 0px 20px;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+}
+.checkout-page main #goBack .go-back a {
+  color: #000000;
+  opacity: 0.5;
+}
+.checkout-page main .checkout-pop-up {
+  display: none;
+  z-index: 2;
+  position: absolute;
+  padding: 48px 48px 61px 48px;
+  max-width: 540px;
+  width: 100%;
+  height: -moz-fit-content;
+  height: fit-content;
+  background-color: #ffffff;
+  transform: translate(-50%, -50%);
+  left: 50%;
+  top: 50%;
+}
+.checkout-page main .checkout-pop-up .image-container {
+  width: 64px;
+  height: 64px;
+  margin-bottom: 33px;
+}
+.checkout-page main .checkout-pop-up .text-container {
+  margin-bottom: 24px;
+  max-width: 284px;
+  width: 100%;
+}
+.checkout-page main .checkout-pop-up .text-container .thank-text {
+  font-size: 32px;
+  font-weight: bold;
+  letter-spacing: 1.14px;
+  line-height: 36px;
+  color: #000000;
+}
+.checkout-page main .checkout-pop-up .sub-container {
+  margin-bottom: 129px;
+  max-width: 444px;
+  width: 100%;
+}
+.checkout-page main .checkout-pop-up .sub-container .sub-text {
+  font-size: 15px;
+  line-height: 25px;
+  color: #000000;
+  opacity: 0.5;
+}
+.checkout-page main .checkout-pop-up .button-container {
+  max-width: 100%;
+}
+.checkout-page main .checkout-pop-up .button-container button {
+  width: 100%;
+  height: 48px;
+  font-size: 13px;
+  color: #ffffff;
+  letter-spacing: 1px;
+  background-color: #d87d4a;
+  color: #ffffff;
+  border: none;
+}
+.checkout-page main .shown {
+  display: block;
+}
+.checkout-page main #checkout {
   padding: 38px 0px 245px 0px;
 }
 @media only screen and (max-width: 768px) {
-  main .background #checkout {
+  .checkout-page main #checkout {
     padding: 24px 0px 116px 0px;
   }
 }
 @media only screen and (max-width: 420px) {
-  main .background #checkout {
+  .checkout-page main #checkout {
     padding-bottom: 97px;
   }
 }
-main .background #checkout .section-container {
+.checkout-page main #checkout .section-container {
   margin: 0 auto;
   max-width: 1440px;
   width: 100%;
   display: flex;
   justify-content: center;
 }
-main .background #checkout .section-container .flex-wrapper {
+.checkout-page main #checkout .section-container .flex-wrapper {
   max-width: 1150px;
   width: 100%;
   padding: 0px 20px;
@@ -1726,14 +1852,14 @@ main .background #checkout .section-container .flex-wrapper {
        column-gap: 20px;
 }
 @media only screen and (max-width: 768px) {
-  main .background #checkout .section-container .flex-wrapper {
+  .checkout-page main #checkout .section-container .flex-wrapper {
     flex-direction: column;
     row-gap: 32px;
     -moz-column-gap: 0px;
          column-gap: 0px;
   }
 }
-main .background #checkout .section-container .flex-wrapper .checkout {
+.checkout-page main #checkout .section-container .flex-wrapper .checkout {
   flex: 2;
   background-color: #ffffff;
   width: 100%;
@@ -1741,39 +1867,39 @@ main .background #checkout .section-container .flex-wrapper .checkout {
   padding: 77px 47.5px 64px 48px;
 }
 @media only screen and (max-width: 768px) {
-  main .background #checkout .section-container .flex-wrapper .checkout {
+  .checkout-page main #checkout .section-container .flex-wrapper .checkout {
     padding: 30px 27px 30px 27.5px;
   }
 }
 @media only screen and (max-width: 420px) {
-  main .background #checkout .section-container .flex-wrapper .checkout {
+  .checkout-page main #checkout .section-container .flex-wrapper .checkout {
     padding: 24px;
   }
 }
-main .background #checkout .section-container .flex-wrapper .checkout .checkout-content {
+.checkout-page main #checkout .section-container .flex-wrapper .checkout .checkout-content {
   display: flex;
   flex-direction: column;
 }
-main .background #checkout .section-container .flex-wrapper .checkout .checkout-content .section-title {
+.checkout-page main #checkout .section-container .flex-wrapper .checkout .checkout-content .section-title {
   font-size: 32px;
   font-weight: bold;
   line-height: 36px;
   letter-spacing: 1.14px;
 }
-main .background #checkout .section-container .flex-wrapper .checkout .checkout-content .billing-details {
+.checkout-page main #checkout .section-container .flex-wrapper .checkout .checkout-content .billing-details {
   margin-top: 41px;
 }
-main .background #checkout .section-container .flex-wrapper .checkout .checkout-content .billing-details .title {
+.checkout-page main #checkout .section-container .flex-wrapper .checkout .checkout-content .billing-details .title {
   margin-bottom: 16px;
 }
-main .background #checkout .section-container .flex-wrapper .checkout .checkout-content .billing-details .title span {
+.checkout-page main #checkout .section-container .flex-wrapper .checkout .checkout-content .billing-details .title span {
   font-size: 13px;
   font-weight: bold;
   color: #d87d4a;
   letter-spacing: 0.93px;
   line-height: 25px;
 }
-main .background #checkout .section-container .flex-wrapper .checkout .checkout-content .billing-details .input-field {
+.checkout-page main #checkout .section-container .flex-wrapper .checkout .checkout-content .billing-details .input-field {
   height: -moz-fit-content;
   height: fit-content;
   display: grid;
@@ -1784,15 +1910,15 @@ main .background #checkout .section-container .flex-wrapper .checkout .checkout-
        column-gap: 16px;
 }
 @media only screen and (max-width: 420px) {
-  main .background #checkout .section-container .flex-wrapper .checkout .checkout-content .billing-details .input-field {
+  .checkout-page main #checkout .section-container .flex-wrapper .checkout .checkout-content .billing-details .input-field {
     display: flex;
     flex-direction: column;
     row-gap: 24px;
   }
 }
-main .background #checkout .section-container .flex-wrapper .checkout .checkout-content .billing-details .input-field .name,
-main .background #checkout .section-container .flex-wrapper .checkout .checkout-content .billing-details .input-field .email,
-main .background #checkout .section-container .flex-wrapper .checkout .checkout-content .billing-details .input-field .number {
+.checkout-page main #checkout .section-container .flex-wrapper .checkout .checkout-content .billing-details .input-field .name,
+.checkout-page main #checkout .section-container .flex-wrapper .checkout .checkout-content .billing-details .input-field .email,
+.checkout-page main #checkout .section-container .flex-wrapper .checkout .checkout-content .billing-details .input-field .number {
   max-width: 309px;
   width: 100%;
   height: 85px;
@@ -1800,35 +1926,37 @@ main .background #checkout .section-container .flex-wrapper .checkout .checkout-
   flex-direction: column;
   justify-content: space-between;
 }
-main .background #checkout .section-container .flex-wrapper .checkout .checkout-content .billing-details .input-field .name .input-title,
-main .background #checkout .section-container .flex-wrapper .checkout .checkout-content .billing-details .input-field .email .input-title,
-main .background #checkout .section-container .flex-wrapper .checkout .checkout-content .billing-details .input-field .number .input-title {
+.checkout-page main #checkout .section-container .flex-wrapper .checkout .checkout-content .billing-details .input-field .name .input-title,
+.checkout-page main #checkout .section-container .flex-wrapper .checkout .checkout-content .billing-details .input-field .email .input-title,
+.checkout-page main #checkout .section-container .flex-wrapper .checkout .checkout-content .billing-details .input-field .number .input-title {
   display: flex;
   justify-content: space-between;
 }
-main .background #checkout .section-container .flex-wrapper .checkout .checkout-content .billing-details .input-field .name .input-title .id-validation,
-main .background #checkout .section-container .flex-wrapper .checkout .checkout-content .billing-details .input-field .email .input-title .id-validation,
-main .background #checkout .section-container .flex-wrapper .checkout .checkout-content .billing-details .input-field .number .input-title .id-validation {
-  color: #cd2c2c;
-}
-main .background #checkout .section-container .flex-wrapper .checkout .checkout-content .billing-details .input-field .name .input-title .validation,
-main .background #checkout .section-container .flex-wrapper .checkout .checkout-content .billing-details .input-field .email .input-title .validation,
-main .background #checkout .section-container .flex-wrapper .checkout .checkout-content .billing-details .input-field .number .input-title .validation {
-  font-size: 12px;
-  letter-spacing: -0.21px;
-  color: #cd2c2c;
-}
-main .background #checkout .section-container .flex-wrapper .checkout .checkout-content .billing-details .input-field .name .input-title span,
-main .background #checkout .section-container .flex-wrapper .checkout .checkout-content .billing-details .input-field .email .input-title span,
-main .background #checkout .section-container .flex-wrapper .checkout .checkout-content .billing-details .input-field .number .input-title span {
+.checkout-page main #checkout .section-container .flex-wrapper .checkout .checkout-content .billing-details .input-field .name .input-title .id-validation,
+.checkout-page main #checkout .section-container .flex-wrapper .checkout .checkout-content .billing-details .input-field .email .input-title .id-validation,
+.checkout-page main #checkout .section-container .flex-wrapper .checkout .checkout-content .billing-details .input-field .number .input-title .id-validation {
   font-size: 12px;
   letter-spacing: -0.21px;
   font-weight: bold;
   color: #000000;
 }
-main .background #checkout .section-container .flex-wrapper .checkout .checkout-content .billing-details .input-field .name input,
-main .background #checkout .section-container .flex-wrapper .checkout .checkout-content .billing-details .input-field .email input,
-main .background #checkout .section-container .flex-wrapper .checkout .checkout-content .billing-details .input-field .number input {
+.checkout-page main #checkout .section-container .flex-wrapper .checkout .checkout-content .billing-details .input-field .name .input-title .id-error,
+.checkout-page main #checkout .section-container .flex-wrapper .checkout .checkout-content .billing-details .input-field .email .input-title .id-error,
+.checkout-page main #checkout .section-container .flex-wrapper .checkout .checkout-content .billing-details .input-field .number .input-title .id-error {
+  color: #cd2c2c;
+}
+.checkout-page main #checkout .section-container .flex-wrapper .checkout .checkout-content .billing-details .input-field .name .input-title .error,
+.checkout-page main #checkout .section-container .flex-wrapper .checkout .checkout-content .billing-details .input-field .email .input-title .error,
+.checkout-page main #checkout .section-container .flex-wrapper .checkout .checkout-content .billing-details .input-field .number .input-title .error {
+  font-size: 12px;
+  letter-spacing: -0.21px;
+  font-weight: bold;
+  color: #cd2c2c;
+  display: none;
+}
+.checkout-page main #checkout .section-container .flex-wrapper .checkout .checkout-content .billing-details .input-field .name input,
+.checkout-page main #checkout .section-container .flex-wrapper .checkout .checkout-content .billing-details .input-field .email input,
+.checkout-page main #checkout .section-container .flex-wrapper .checkout .checkout-content .billing-details .input-field .number input {
   width: 100%;
   height: 60px;
   border: 1px #cfcfcf solid;
@@ -1841,37 +1969,37 @@ main .background #checkout .section-container .flex-wrapper .checkout .checkout-
   color: #000000;
   opacity: 0.4;
 }
-main .background #checkout .section-container .flex-wrapper .checkout .checkout-content .billing-details .input-field .name .input-validation,
-main .background #checkout .section-container .flex-wrapper .checkout .checkout-content .billing-details .input-field .email .input-validation,
-main .background #checkout .section-container .flex-wrapper .checkout .checkout-content .billing-details .input-field .number .input-validation {
+.checkout-page main #checkout .section-container .flex-wrapper .checkout .checkout-content .billing-details .input-field .name .input-validation,
+.checkout-page main #checkout .section-container .flex-wrapper .checkout .checkout-content .billing-details .input-field .email .input-validation,
+.checkout-page main #checkout .section-container .flex-wrapper .checkout .checkout-content .billing-details .input-field .number .input-validation {
   border: #cd2c2c 3px solid;
 }
-main .background #checkout .section-container .flex-wrapper .checkout .checkout-content .billing-details .input-field .name {
+.checkout-page main #checkout .section-container .flex-wrapper .checkout .checkout-content .billing-details .input-field .name {
   grid-row: 1;
   grid-column: 1;
 }
-main .background #checkout .section-container .flex-wrapper .checkout .checkout-content .billing-details .input-field .email {
+.checkout-page main #checkout .section-container .flex-wrapper .checkout .checkout-content .billing-details .input-field .email {
   grid-row: 1;
   grid-column: 2;
 }
-main .background #checkout .section-container .flex-wrapper .checkout .checkout-content .billing-details .input-field .number {
+.checkout-page main #checkout .section-container .flex-wrapper .checkout .checkout-content .billing-details .input-field .number {
   grid-row: 2;
   grid-column: 1;
 }
-main .background #checkout .section-container .flex-wrapper .checkout .checkout-content .shopping-info {
+.checkout-page main #checkout .section-container .flex-wrapper .checkout .checkout-content .shopping-info {
   margin-top: 61px;
 }
-main .background #checkout .section-container .flex-wrapper .checkout .checkout-content .shopping-info .title {
+.checkout-page main #checkout .section-container .flex-wrapper .checkout .checkout-content .shopping-info .title {
   margin-bottom: 16px;
 }
-main .background #checkout .section-container .flex-wrapper .checkout .checkout-content .shopping-info .title span {
+.checkout-page main #checkout .section-container .flex-wrapper .checkout .checkout-content .shopping-info .title span {
   font-size: 13px;
   font-weight: bold;
   color: #d87d4a;
   letter-spacing: 0.93px;
   line-height: 25px;
 }
-main .background #checkout .section-container .flex-wrapper .checkout .checkout-content .shopping-info .input-field {
+.checkout-page main #checkout .section-container .flex-wrapper .checkout .checkout-content .shopping-info .input-field {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr;
@@ -1882,56 +2010,58 @@ main .background #checkout .section-container .flex-wrapper .checkout .checkout-
   height: fit-content;
 }
 @media only screen and (max-width: 420px) {
-  main .background #checkout .section-container .flex-wrapper .checkout .checkout-content .shopping-info .input-field {
+  .checkout-page main #checkout .section-container .flex-wrapper .checkout .checkout-content .shopping-info .input-field {
     display: flex;
     flex-direction: column;
     row-gap: 24px;
   }
 }
-main .background #checkout .section-container .flex-wrapper .checkout .checkout-content .shopping-info .input-field .address,
-main .background #checkout .section-container .flex-wrapper .checkout .checkout-content .shopping-info .input-field .zip,
-main .background #checkout .section-container .flex-wrapper .checkout .checkout-content .shopping-info .input-field .city,
-main .background #checkout .section-container .flex-wrapper .checkout .checkout-content .shopping-info .input-field .country {
+.checkout-page main #checkout .section-container .flex-wrapper .checkout .checkout-content .shopping-info .input-field .address,
+.checkout-page main #checkout .section-container .flex-wrapper .checkout .checkout-content .shopping-info .input-field .zip,
+.checkout-page main #checkout .section-container .flex-wrapper .checkout .checkout-content .shopping-info .input-field .city,
+.checkout-page main #checkout .section-container .flex-wrapper .checkout .checkout-content .shopping-info .input-field .country {
   width: 100%;
   height: 85px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
-main .background #checkout .section-container .flex-wrapper .checkout .checkout-content .shopping-info .input-field .address .input-title,
-main .background #checkout .section-container .flex-wrapper .checkout .checkout-content .shopping-info .input-field .zip .input-title,
-main .background #checkout .section-container .flex-wrapper .checkout .checkout-content .shopping-info .input-field .city .input-title,
-main .background #checkout .section-container .flex-wrapper .checkout .checkout-content .shopping-info .input-field .country .input-title {
+.checkout-page main #checkout .section-container .flex-wrapper .checkout .checkout-content .shopping-info .input-field .address .input-title,
+.checkout-page main #checkout .section-container .flex-wrapper .checkout .checkout-content .shopping-info .input-field .zip .input-title,
+.checkout-page main #checkout .section-container .flex-wrapper .checkout .checkout-content .shopping-info .input-field .city .input-title,
+.checkout-page main #checkout .section-container .flex-wrapper .checkout .checkout-content .shopping-info .input-field .country .input-title {
   display: flex;
   justify-content: space-between;
 }
-main .background #checkout .section-container .flex-wrapper .checkout .checkout-content .shopping-info .input-field .address .input-title .id-validation,
-main .background #checkout .section-container .flex-wrapper .checkout .checkout-content .shopping-info .input-field .zip .input-title .id-validation,
-main .background #checkout .section-container .flex-wrapper .checkout .checkout-content .shopping-info .input-field .city .input-title .id-validation,
-main .background #checkout .section-container .flex-wrapper .checkout .checkout-content .shopping-info .input-field .country .input-title .id-validation {
-  color: #cd2c2c;
-}
-main .background #checkout .section-container .flex-wrapper .checkout .checkout-content .shopping-info .input-field .address .input-title .validation,
-main .background #checkout .section-container .flex-wrapper .checkout .checkout-content .shopping-info .input-field .zip .input-title .validation,
-main .background #checkout .section-container .flex-wrapper .checkout .checkout-content .shopping-info .input-field .city .input-title .validation,
-main .background #checkout .section-container .flex-wrapper .checkout .checkout-content .shopping-info .input-field .country .input-title .validation {
-  font-size: 12px;
-  letter-spacing: -0.21px;
-  color: #cd2c2c;
-}
-main .background #checkout .section-container .flex-wrapper .checkout .checkout-content .shopping-info .input-field .address .input-title span,
-main .background #checkout .section-container .flex-wrapper .checkout .checkout-content .shopping-info .input-field .zip .input-title span,
-main .background #checkout .section-container .flex-wrapper .checkout .checkout-content .shopping-info .input-field .city .input-title span,
-main .background #checkout .section-container .flex-wrapper .checkout .checkout-content .shopping-info .input-field .country .input-title span {
+.checkout-page main #checkout .section-container .flex-wrapper .checkout .checkout-content .shopping-info .input-field .address .input-title .id-validation,
+.checkout-page main #checkout .section-container .flex-wrapper .checkout .checkout-content .shopping-info .input-field .zip .input-title .id-validation,
+.checkout-page main #checkout .section-container .flex-wrapper .checkout .checkout-content .shopping-info .input-field .city .input-title .id-validation,
+.checkout-page main #checkout .section-container .flex-wrapper .checkout .checkout-content .shopping-info .input-field .country .input-title .id-validation {
   font-size: 12px;
   letter-spacing: -0.21px;
   font-weight: bold;
   color: #000000;
 }
-main .background #checkout .section-container .flex-wrapper .checkout .checkout-content .shopping-info .input-field .address input,
-main .background #checkout .section-container .flex-wrapper .checkout .checkout-content .shopping-info .input-field .zip input,
-main .background #checkout .section-container .flex-wrapper .checkout .checkout-content .shopping-info .input-field .city input,
-main .background #checkout .section-container .flex-wrapper .checkout .checkout-content .shopping-info .input-field .country input {
+.checkout-page main #checkout .section-container .flex-wrapper .checkout .checkout-content .shopping-info .input-field .address .input-title .id-error,
+.checkout-page main #checkout .section-container .flex-wrapper .checkout .checkout-content .shopping-info .input-field .zip .input-title .id-error,
+.checkout-page main #checkout .section-container .flex-wrapper .checkout .checkout-content .shopping-info .input-field .city .input-title .id-error,
+.checkout-page main #checkout .section-container .flex-wrapper .checkout .checkout-content .shopping-info .input-field .country .input-title .id-error {
+  color: #cd2c2c;
+}
+.checkout-page main #checkout .section-container .flex-wrapper .checkout .checkout-content .shopping-info .input-field .address .input-title .error,
+.checkout-page main #checkout .section-container .flex-wrapper .checkout .checkout-content .shopping-info .input-field .zip .input-title .error,
+.checkout-page main #checkout .section-container .flex-wrapper .checkout .checkout-content .shopping-info .input-field .city .input-title .error,
+.checkout-page main #checkout .section-container .flex-wrapper .checkout .checkout-content .shopping-info .input-field .country .input-title .error {
+  font-size: 12px;
+  letter-spacing: -0.21px;
+  font-weight: bold;
+  color: #cd2c2c;
+  display: none;
+}
+.checkout-page main #checkout .section-container .flex-wrapper .checkout .checkout-content .shopping-info .input-field .address input,
+.checkout-page main #checkout .section-container .flex-wrapper .checkout .checkout-content .shopping-info .input-field .zip input,
+.checkout-page main #checkout .section-container .flex-wrapper .checkout .checkout-content .shopping-info .input-field .city input,
+.checkout-page main #checkout .section-container .flex-wrapper .checkout .checkout-content .shopping-info .input-field .country input {
   width: 100%;
   height: 60px;
   border: 1px #cfcfcf solid;
@@ -1944,75 +2074,75 @@ main .background #checkout .section-container .flex-wrapper .checkout .checkout-
   color: #000000;
   opacity: 0.4;
 }
-main .background #checkout .section-container .flex-wrapper .checkout .checkout-content .shopping-info .input-field .address .input-validation,
-main .background #checkout .section-container .flex-wrapper .checkout .checkout-content .shopping-info .input-field .zip .input-validation,
-main .background #checkout .section-container .flex-wrapper .checkout .checkout-content .shopping-info .input-field .city .input-validation,
-main .background #checkout .section-container .flex-wrapper .checkout .checkout-content .shopping-info .input-field .country .input-validation {
+.checkout-page main #checkout .section-container .flex-wrapper .checkout .checkout-content .shopping-info .input-field .address .input-validation,
+.checkout-page main #checkout .section-container .flex-wrapper .checkout .checkout-content .shopping-info .input-field .zip .input-validation,
+.checkout-page main #checkout .section-container .flex-wrapper .checkout .checkout-content .shopping-info .input-field .city .input-validation,
+.checkout-page main #checkout .section-container .flex-wrapper .checkout .checkout-content .shopping-info .input-field .country .input-validation {
   border: #cd2c2c 3px solid;
 }
-main .background #checkout .section-container .flex-wrapper .checkout .checkout-content .shopping-info .input-field .address {
+.checkout-page main #checkout .section-container .flex-wrapper .checkout .checkout-content .shopping-info .input-field .address {
   grid-column: 1/3;
   grid-row: 1;
   width: 100%;
 }
-main .background #checkout .section-container .flex-wrapper .checkout .checkout-content .shopping-info .input-field .zip,
-main .background #checkout .section-container .flex-wrapper .checkout .checkout-content .shopping-info .input-field .city,
-main .background #checkout .section-container .flex-wrapper .checkout .checkout-content .shopping-info .input-field .country {
+.checkout-page main #checkout .section-container .flex-wrapper .checkout .checkout-content .shopping-info .input-field .zip,
+.checkout-page main #checkout .section-container .flex-wrapper .checkout .checkout-content .shopping-info .input-field .city,
+.checkout-page main #checkout .section-container .flex-wrapper .checkout .checkout-content .shopping-info .input-field .country {
   max-width: 309px;
   width: 100%;
 }
-main .background #checkout .section-container .flex-wrapper .checkout .checkout-content .shopping-info .input-field .zip {
+.checkout-page main #checkout .section-container .flex-wrapper .checkout .checkout-content .shopping-info .input-field .zip {
   grid-row: 2;
   grid-column: 1;
 }
-main .background #checkout .section-container .flex-wrapper .checkout .checkout-content .shopping-info .input-field .city {
+.checkout-page main #checkout .section-container .flex-wrapper .checkout .checkout-content .shopping-info .input-field .city {
   grid-row: 2;
   grid-column: 2;
 }
-main .background #checkout .section-container .flex-wrapper .checkout .checkout-content .shopping-info .input-field .country {
+.checkout-page main #checkout .section-container .flex-wrapper .checkout .checkout-content .shopping-info .input-field .country {
   grid-row: 3;
   grid-column: 1;
 }
-main .background #checkout .section-container .flex-wrapper .checkout .checkout-content .payment-details {
+.checkout-page main #checkout .section-container .flex-wrapper .checkout .checkout-content .payment-details {
   margin-top: 61px;
 }
-main .background #checkout .section-container .flex-wrapper .checkout .checkout-content .payment-details .title {
+.checkout-page main #checkout .section-container .flex-wrapper .checkout .checkout-content .payment-details .title {
   margin-bottom: 13px;
   display: flex;
   justify-content: space-between;
 }
-main .background #checkout .section-container .flex-wrapper .checkout .checkout-content .payment-details .title .payment {
+.checkout-page main #checkout .section-container .flex-wrapper .checkout .checkout-content .payment-details .title .payment {
   font-size: 13px;
   font-weight: bold;
   color: #d87d4a;
   letter-spacing: 0.93px;
   line-height: 25px;
 }
-main .background #checkout .section-container .flex-wrapper .checkout .checkout-content .payment-details .title .credit-card {
+.checkout-page main #checkout .section-container .flex-wrapper .checkout .checkout-content .payment-details .title .credit-card {
   font-size: 13px;
   color: #000000;
   letter-spacing: 0.3px;
   line-height: 16px;
   text-decoration: underline;
 }
-main .background #checkout .section-container .flex-wrapper .checkout .checkout-content .payment-details .description {
+.checkout-page main #checkout .section-container .flex-wrapper .checkout .checkout-content .payment-details .description {
   display: flex;
   flex-direction: column;
 }
 @media only screen and (max-width: 768px) {
-  main .background #checkout .section-container .flex-wrapper .checkout .checkout-content .payment-details .description {
+  .checkout-page main #checkout .section-container .flex-wrapper .checkout .checkout-content .payment-details .description {
     flex-direction: row;
     -moz-column-gap: 25px;
          column-gap: 25px;
   }
 }
 @media only screen and (max-width: 420px) {
-  main .background #checkout .section-container .flex-wrapper .checkout .checkout-content .payment-details .description {
+  .checkout-page main #checkout .section-container .flex-wrapper .checkout .checkout-content .payment-details .description {
     flex-direction: column;
     row-gap: 32px;
   }
 }
-main .background #checkout .section-container .flex-wrapper .checkout .checkout-content .payment-details .description .card {
+.checkout-page main #checkout .section-container .flex-wrapper .checkout .checkout-content .payment-details .description .card {
   order: -1;
   padding: 100px 0px 10px 0px;
   margin: 0 auto;
@@ -2023,50 +2153,50 @@ main .background #checkout .section-container .flex-wrapper .checkout .checkout-
   position: relative;
 }
 @media only screen and (max-width: 768px) {
-  main .background #checkout .section-container .flex-wrapper .checkout .checkout-content .payment-details .description .card {
+  .checkout-page main #checkout .section-container .flex-wrapper .checkout .checkout-content .payment-details .description .card {
     order: 1;
     max-width: 300px;
     padding: 88px 0px 15px 0px;
   }
 }
 @media only screen and (max-width: 420px) {
-  main .background #checkout .section-container .flex-wrapper .checkout .checkout-content .payment-details .description .card {
+  .checkout-page main #checkout .section-container .flex-wrapper .checkout .checkout-content .payment-details .description .card {
     max-width: 220px;
     padding: 64px 0px 11px 0px;
   }
 }
-main .background #checkout .section-container .flex-wrapper .checkout .checkout-content .payment-details .description .card .card-content {
+.checkout-page main #checkout .section-container .flex-wrapper .checkout .checkout-content .payment-details .description .card .card-content {
   padding: 0 20px;
   max-width: 340px;
   width: 100%;
 }
-main .background #checkout .section-container .flex-wrapper .checkout .checkout-content .payment-details .description .card .card-content .sim {
+.checkout-page main #checkout .section-container .flex-wrapper .checkout .checkout-content .payment-details .description .card .card-content .sim {
   position: absolute;
   left: 28px;
   top: 25px;
 }
 @media only screen and (max-width: 420px) {
-  main .background #checkout .section-container .flex-wrapper .checkout .checkout-content .payment-details .description .card .card-content .sim {
+  .checkout-page main #checkout .section-container .flex-wrapper .checkout .checkout-content .payment-details .description .card .card-content .sim {
     top: 18px;
     left: 18px;
     width: 13px;
     height: 13px;
   }
 }
-main .background #checkout .section-container .flex-wrapper .checkout .checkout-content .payment-details .description .card .card-content .wifi {
+.checkout-page main #checkout .section-container .flex-wrapper .checkout .checkout-content .payment-details .description .card .card-content .wifi {
   position: absolute;
   left: 55px;
   top: 24px;
 }
 @media only screen and (max-width: 420px) {
-  main .background #checkout .section-container .flex-wrapper .checkout .checkout-content .payment-details .description .card .card-content .wifi {
+  .checkout-page main #checkout .section-container .flex-wrapper .checkout .checkout-content .payment-details .description .card .card-content .wifi {
     top: 15px;
     left: 35px;
     width: 12px;
     height: 18px;
   }
 }
-main .background #checkout .section-container .flex-wrapper .checkout .checkout-content .payment-details .description .card .card-content .number {
+.checkout-page main #checkout .section-container .flex-wrapper .checkout .checkout-content .payment-details .description .card .card-content .number {
   color: #ffffff;
   word-spacing: 25px;
   font-size: 18px;
@@ -2074,43 +2204,43 @@ main .background #checkout .section-container .flex-wrapper .checkout .checkout-
   line-height: 24px;
 }
 @media only screen and (max-width: 768px) {
-  main .background #checkout .section-container .flex-wrapper .checkout .checkout-content .payment-details .description .card .card-content .number {
+  .checkout-page main #checkout .section-container .flex-wrapper .checkout .checkout-content .payment-details .description .card .card-content .number {
     font-size: 15px;
     line-height: 21px;
     word-spacing: 5px;
   }
 }
 @media only screen and (max-width: 420px) {
-  main .background #checkout .section-container .flex-wrapper .checkout .checkout-content .payment-details .description .card .card-content .number {
+  .checkout-page main #checkout .section-container .flex-wrapper .checkout .checkout-content .payment-details .description .card .card-content .number {
     font-size: 12px;
     line-height: 15px;
     word-spacing: 3px;
   }
 }
-main .background #checkout .section-container .flex-wrapper .checkout .checkout-content .payment-details .description .card .card-content .card-logo {
+.checkout-page main #checkout .section-container .flex-wrapper .checkout .checkout-content .payment-details .description .card .card-content .card-logo {
   width: 100%;
   display: flex;
   justify-content: space-between;
   margin-top: 23px;
 }
-main .background #checkout .section-container .flex-wrapper .checkout .checkout-content .payment-details .description .card .card-content .card-logo .cardholder {
+.checkout-page main #checkout .section-container .flex-wrapper .checkout .checkout-content .payment-details .description .card .card-content .card-logo .cardholder {
   color: #aeaeae;
   font-size: 14px;
   line-height: 16px;
 }
 @media only screen and (max-width: 420px) {
-  main .background #checkout .section-container .flex-wrapper .checkout .checkout-content .payment-details .description .card .card-content .card-logo .cardholder {
+  .checkout-page main #checkout .section-container .flex-wrapper .checkout .checkout-content .payment-details .description .card .card-content .card-logo .cardholder {
     font-size: 9px;
     line-height: 10px;
   }
 }
 @media only screen and (max-width: 420px) {
-  main .background #checkout .section-container .flex-wrapper .checkout .checkout-content .payment-details .description .card .card-content .card-logo img {
+  .checkout-page main #checkout .section-container .flex-wrapper .checkout .checkout-content .payment-details .description .card .card-content .card-logo img {
     width: 26px;
     height: 15px;
   }
 }
-main .background #checkout .section-container .flex-wrapper .checkout .checkout-content .payment-details .description .input-field {
+.checkout-page main #checkout .section-container .flex-wrapper .checkout .checkout-content .payment-details .description .input-field {
   margin: 41px auto 0px auto;
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -2123,40 +2253,51 @@ main .background #checkout .section-container .flex-wrapper .checkout .checkout-
   width: 100%;
 }
 @media only screen and (max-width: 768px) {
-  main .background #checkout .section-container .flex-wrapper .checkout .checkout-content .payment-details .description .input-field {
+  .checkout-page main #checkout .section-container .flex-wrapper .checkout .checkout-content .payment-details .description .input-field {
     max-width: 309px;
     margin: 0px;
   }
 }
-main .background #checkout .section-container .flex-wrapper .checkout .checkout-content .payment-details .description .input-field .country,
-main .background #checkout .section-container .flex-wrapper .checkout .checkout-content .payment-details .description .input-field .card-number,
-main .background #checkout .section-container .flex-wrapper .checkout .checkout-content .payment-details .description .input-field .date,
-main .background #checkout .section-container .flex-wrapper .checkout .checkout-content .payment-details .description .input-field .code {
-  height: 48px;
+.checkout-page main #checkout .section-container .flex-wrapper .checkout .checkout-content .payment-details .description .input-field .country,
+.checkout-page main #checkout .section-container .flex-wrapper .checkout .checkout-content .payment-details .description .input-field .card-number,
+.checkout-page main #checkout .section-container .flex-wrapper .checkout .checkout-content .payment-details .description .input-field .date,
+.checkout-page main #checkout .section-container .flex-wrapper .checkout .checkout-content .payment-details .description .input-field .code {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 84px;
 }
 @media only screen and (max-width: 768px) {
-  main .background #checkout .section-container .flex-wrapper .checkout .checkout-content .payment-details .description .input-field .country,
-  main .background #checkout .section-container .flex-wrapper .checkout .checkout-content .payment-details .description .input-field .card-number,
-  main .background #checkout .section-container .flex-wrapper .checkout .checkout-content .payment-details .description .input-field .date,
-  main .background #checkout .section-container .flex-wrapper .checkout .checkout-content .payment-details .description .input-field .code {
+  .checkout-page main #checkout .section-container .flex-wrapper .checkout .checkout-content .payment-details .description .input-field .country,
+  .checkout-page main #checkout .section-container .flex-wrapper .checkout .checkout-content .payment-details .description .input-field .card-number,
+  .checkout-page main #checkout .section-container .flex-wrapper .checkout .checkout-content .payment-details .description .input-field .date,
+  .checkout-page main #checkout .section-container .flex-wrapper .checkout .checkout-content .payment-details .description .input-field .code {
     height: 56px;
   }
 }
-main .background #checkout .section-container .flex-wrapper .checkout .checkout-content .payment-details .description .input-field .country .input-title span,
-main .background #checkout .section-container .flex-wrapper .checkout .checkout-content .payment-details .description .input-field .card-number .input-title span,
-main .background #checkout .section-container .flex-wrapper .checkout .checkout-content .payment-details .description .input-field .date .input-title span,
-main .background #checkout .section-container .flex-wrapper .checkout .checkout-content .payment-details .description .input-field .code .input-title span {
+.checkout-page main #checkout .section-container .flex-wrapper .checkout .checkout-content .payment-details .description .input-field .country .input-title,
+.checkout-page main #checkout .section-container .flex-wrapper .checkout .checkout-content .payment-details .description .input-field .card-number .input-title,
+.checkout-page main #checkout .section-container .flex-wrapper .checkout .checkout-content .payment-details .description .input-field .date .input-title,
+.checkout-page main #checkout .section-container .flex-wrapper .checkout .checkout-content .payment-details .description .input-field .code .input-title {
+  display: flex;
+  justify-content: end;
+}
+.checkout-page main #checkout .section-container .flex-wrapper .checkout .checkout-content .payment-details .description .input-field .country .input-title .error,
+.checkout-page main #checkout .section-container .flex-wrapper .checkout .checkout-content .payment-details .description .input-field .card-number .input-title .error,
+.checkout-page main #checkout .section-container .flex-wrapper .checkout .checkout-content .payment-details .description .input-field .date .input-title .error,
+.checkout-page main #checkout .section-container .flex-wrapper .checkout .checkout-content .payment-details .description .input-field .code .input-title .error {
   font-size: 12px;
   letter-spacing: -0.21px;
   font-weight: bold;
-  color: #000000;
+  color: #cd2c2c;
+  display: none;
 }
-main .background #checkout .section-container .flex-wrapper .checkout .checkout-content .payment-details .description .input-field .country input,
-main .background #checkout .section-container .flex-wrapper .checkout .checkout-content .payment-details .description .input-field .card-number input,
-main .background #checkout .section-container .flex-wrapper .checkout .checkout-content .payment-details .description .input-field .date input,
-main .background #checkout .section-container .flex-wrapper .checkout .checkout-content .payment-details .description .input-field .code input {
+.checkout-page main #checkout .section-container .flex-wrapper .checkout .checkout-content .payment-details .description .input-field .country input,
+.checkout-page main #checkout .section-container .flex-wrapper .checkout .checkout-content .payment-details .description .input-field .card-number input,
+.checkout-page main #checkout .section-container .flex-wrapper .checkout .checkout-content .payment-details .description .input-field .date input,
+.checkout-page main #checkout .section-container .flex-wrapper .checkout .checkout-content .payment-details .description .input-field .code input {
   width: 100%;
-  height: 100%;
+  height: 60px;
   border: 1px #cfcfcf solid;
   border-radius: 8px;
   display: flex;
@@ -2167,15 +2308,21 @@ main .background #checkout .section-container .flex-wrapper .checkout .checkout-
   color: #000000;
   opacity: 0.4;
 }
-main .background #checkout .section-container .flex-wrapper .checkout .checkout-content .payment-details .description .input-field .country {
+.checkout-page main #checkout .section-container .flex-wrapper .checkout .checkout-content .payment-details .description .input-field .country .input-validation,
+.checkout-page main #checkout .section-container .flex-wrapper .checkout .checkout-content .payment-details .description .input-field .card-number .input-validation,
+.checkout-page main #checkout .section-container .flex-wrapper .checkout .checkout-content .payment-details .description .input-field .date .input-validation,
+.checkout-page main #checkout .section-container .flex-wrapper .checkout .checkout-content .payment-details .description .input-field .code .input-validation {
+  border: #cd2c2c 3px solid;
+}
+.checkout-page main #checkout .section-container .flex-wrapper .checkout .checkout-content .payment-details .description .input-field .country {
   grid-row: 1;
   grid-column: 1/3;
 }
-main .background #checkout .section-container .flex-wrapper .checkout .checkout-content .payment-details .description .input-field .card-number {
+.checkout-page main #checkout .section-container .flex-wrapper .checkout .checkout-content .payment-details .description .input-field .card-number {
   grid-row: 2;
   grid-column: 1/3;
 }
-main .background #checkout .section-container .flex-wrapper .summary {
+.checkout-page main #checkout .section-container .flex-wrapper .summary {
   padding: 32px 33px;
   flex: 1;
   background-color: #ffffff;
@@ -2184,28 +2331,33 @@ main .background #checkout .section-container .flex-wrapper .summary {
   width: 100%;
   border-radius: 8px;
 }
-main .background #checkout .section-container .flex-wrapper .summary .summary-title {
+.checkout-page main #checkout .section-container .flex-wrapper .summary .summary-title {
   font-size: 18px;
   font-weight: bold;
   letter-spacing: 1.29px;
   color: #000000;
 }
-main .background #checkout .section-container .flex-wrapper .summary .element {
+.checkout-page main #checkout .section-container .flex-wrapper .summary .element-container {
   margin-top: 31px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 16px;
+}
+.checkout-page main #checkout .section-container .flex-wrapper .summary .element-container .element {
   max-width: 284px;
   width: 100%;
   display: flex;
   justify-content: space-between;
 }
 @media only screen and (max-width: 768px) {
-  main .background #checkout .section-container .flex-wrapper .summary .element {
+  .checkout-page main #checkout .section-container .flex-wrapper .summary .element-container .element {
     max-width: 623px;
   }
 }
-main .background #checkout .section-container .flex-wrapper .summary .element .product-info {
+.checkout-page main #checkout .section-container .flex-wrapper .summary .element-container .element .product-info {
   display: flex;
 }
-main .background #checkout .section-container .flex-wrapper .summary .element .product-info .image-container {
+.checkout-page main #checkout .section-container .flex-wrapper .summary .element-container .element .product-info .image-container {
   margin-right: 16px;
   width: 64px;
   height: 64px;
@@ -2215,11 +2367,11 @@ main .background #checkout .section-container .flex-wrapper .summary .element .p
   background-color: #f1f1f1;
   border-radius: 8px;
 }
-main .background #checkout .section-container .flex-wrapper .summary .element .product-info .image-container img {
+.checkout-page main #checkout .section-container .flex-wrapper .summary .element-container .element .product-info .image-container img {
   width: 36px;
   height: 40px;
 }
-main .background #checkout .section-container .flex-wrapper .summary .element .product-info .info-container {
+.checkout-page main #checkout .section-container .flex-wrapper .summary .element-container .element .product-info .info-container {
   padding: 7px 0px;
   display: flex;
   flex-direction: column;
@@ -2227,28 +2379,28 @@ main .background #checkout .section-container .flex-wrapper .summary .element .p
   width: -moz-fit-content;
   width: fit-content;
 }
-main .background #checkout .section-container .flex-wrapper .summary .element .product-info .info-container .product-name {
+.checkout-page main #checkout .section-container .flex-wrapper .summary .element-container .element .product-info .info-container .product-name {
   font-size: 15px;
   font-weight: bold;
   line-height: 25px;
   color: #000000;
 }
-main .background #checkout .section-container .flex-wrapper .summary .element .product-info .info-container .product-price {
+.checkout-page main #checkout .section-container .flex-wrapper .summary .element-container .element .product-info .info-container .product-price {
   font-size: 14px;
   line-height: 25px;
   font-weight: bold;
   color: #000000;
   opacity: 0.5;
 }
-main .background #checkout .section-container .flex-wrapper .summary .element .quantity-container {
+.checkout-page main #checkout .section-container .flex-wrapper .summary .element-container .element .quantity-container {
   padding: 7px 0px;
 }
-main .background #checkout .section-container .flex-wrapper .summary .element .quantity-container span {
+.checkout-page main #checkout .section-container .flex-wrapper .summary .element-container .element .quantity-container span {
   font-size: 15px;
   font-weight: bold;
   line-height: 25px;
 }
-main .background #checkout .section-container .flex-wrapper .summary .total-container {
+.checkout-page main #checkout .section-container .flex-wrapper .summary .total-container {
   margin-top: 32px;
   max-width: 284px;
   width: 100%;
@@ -2257,21 +2409,21 @@ main .background #checkout .section-container .flex-wrapper .summary .total-cont
   align-items: center;
 }
 @media only screen and (max-width: 768px) {
-  main .background #checkout .section-container .flex-wrapper .summary .total-container {
+  .checkout-page main #checkout .section-container .flex-wrapper .summary .total-container {
     max-width: 623px;
   }
 }
-main .background #checkout .section-container .flex-wrapper .summary .total-container .total-text {
+.checkout-page main #checkout .section-container .flex-wrapper .summary .total-container .total-text {
   font-size: 15px;
   color: #000000;
   opacity: 0.5;
   line-height: 25px;
 }
-main .background #checkout .section-container .flex-wrapper .summary .total-container .total-price {
+.checkout-page main #checkout .section-container .flex-wrapper .summary .total-container .total-price {
   font-size: 18px;
   font-weight: bold;
 }
-main .background #checkout .section-container .flex-wrapper .summary .shipping-container {
+.checkout-page main #checkout .section-container .flex-wrapper .summary .shipping-container {
   margin-top: 8px;
   max-width: 284px;
   width: 100%;
@@ -2280,21 +2432,21 @@ main .background #checkout .section-container .flex-wrapper .summary .shipping-c
   align-items: center;
 }
 @media only screen and (max-width: 768px) {
-  main .background #checkout .section-container .flex-wrapper .summary .shipping-container {
+  .checkout-page main #checkout .section-container .flex-wrapper .summary .shipping-container {
     max-width: 623px;
   }
 }
-main .background #checkout .section-container .flex-wrapper .summary .shipping-container .shipping-text {
+.checkout-page main #checkout .section-container .flex-wrapper .summary .shipping-container .shipping-text {
   font-size: 15px;
   color: #000000;
   opacity: 0.5;
   line-height: 25px;
 }
-main .background #checkout .section-container .flex-wrapper .summary .shipping-container .shipping-price {
+.checkout-page main #checkout .section-container .flex-wrapper .summary .shipping-container .shipping-price {
   font-size: 18px;
   font-weight: bold;
 }
-main .background #checkout .section-container .flex-wrapper .summary .grand-container {
+.checkout-page main #checkout .section-container .flex-wrapper .summary .grand-container {
   margin-top: 57px;
   max-width: 284px;
   width: 100%;
@@ -2303,32 +2455,32 @@ main .background #checkout .section-container .flex-wrapper .summary .grand-cont
   align-items: center;
 }
 @media only screen and (max-width: 768px) {
-  main .background #checkout .section-container .flex-wrapper .summary .grand-container {
+  .checkout-page main #checkout .section-container .flex-wrapper .summary .grand-container {
     max-width: 623px;
   }
 }
-main .background #checkout .section-container .flex-wrapper .summary .grand-container .grand-text {
+.checkout-page main #checkout .section-container .flex-wrapper .summary .grand-container .grand-text {
   font-size: 15px;
   color: #000000;
   opacity: 0.5;
   line-height: 25px;
 }
-main .background #checkout .section-container .flex-wrapper .summary .grand-container .grand-price {
+.checkout-page main #checkout .section-container .flex-wrapper .summary .grand-container .grand-price {
   font-size: 18px;
   color: #d87d4a;
   font-weight: bold;
 }
-main .background #checkout .section-container .flex-wrapper .summary .checkout-container {
+.checkout-page main #checkout .section-container .flex-wrapper .summary .checkout-container {
   margin-top: 32px;
   max-width: 284px;
   height: 48px;
 }
 @media only screen and (max-width: 768px) {
-  main .background #checkout .section-container .flex-wrapper .summary .checkout-container {
+  .checkout-page main #checkout .section-container .flex-wrapper .summary .checkout-container {
     max-width: 623px;
   }
 }
-main .background #checkout .section-container .flex-wrapper .summary .checkout-container button {
+.checkout-page main #checkout .section-container .flex-wrapper .summary .checkout-container button {
   width: 100%;
   height: 100%;
   background-color: #d87d4a;

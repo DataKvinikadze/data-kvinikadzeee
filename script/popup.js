@@ -1,5 +1,4 @@
 let shoppingCartIcon = document.querySelector(".cart");
-let closeBtn = document.querySelector(".close-btn");
 let overlay = document.querySelector(".overlay");
 // eventlisteneri shoping cartze, rata dawerisas gamochndes/gaqres
 shoppingCartIcon.addEventListener("click", () => {
@@ -7,12 +6,6 @@ shoppingCartIcon.addEventListener("click", () => {
   popup.classList.toggle("show");
   overlay.classList.toggle("show");
   updateCartPopup();
-});
-
-// igive close buttonze
-closeBtn.addEventListener("click", () => {
-  let popup = document.querySelector(".pop-up");
-  popup.classList.remove("show");
 });
 
 // funqcia romelic mtlian fass tvlis
@@ -142,3 +135,69 @@ function updateCartPopup() {
     window.location.href = "../checkout.html";
   });
 }
+
+// view more pop-up
+
+const menu = document.querySelector(".menu-btn");
+const view = document.querySelector(".view-more");
+
+const homeLinkContainer = document.createElement("div");
+const homePng = document.createElement("img");
+const homeLink = document.createElement("span");
+
+homeLink.textContent = "Home";
+
+homePng.src = "../assets/svg/vec.svg";
+
+homeLinkContainer.classList.add("home-container");
+homeLink.classList.add("home-link");
+
+homeLinkContainer.appendChild(homePng);
+homeLinkContainer.appendChild(homeLink);
+
+homeLinkContainer.addEventListener("click", () => {
+  window.location.href = "../index.html";
+});
+const productsLinkContainer = document.createElement("div");
+const productsImg = document.createElement("img");
+const prodcutsLink = document.createElement("span");
+
+prodcutsLink.textContent = "Products";
+
+productsImg.src = "../assets/svg/pap.svg";
+
+productsLinkContainer.classList.add("products-container");
+prodcutsLink.classList.add("products-link");
+
+productsLinkContainer.appendChild(productsImg);
+productsLinkContainer.appendChild(prodcutsLink);
+
+productsLinkContainer.addEventListener("click", () => {
+  window.location.href = "../products.html";
+});
+
+const cartContainer = document.createElement("div");
+const cartImg = document.createElement("img");
+const cartLink = document.createElement("span");
+
+cartLink.textContent = "Cart";
+
+cartImg.src = "../assets/svg/gr.svg";
+
+cartContainer.classList.add("cart-container");
+cartLink.classList.add("cart-link");
+
+cartContainer.appendChild(cartImg);
+cartContainer.appendChild(cartLink);
+
+cartContainer.addEventListener("click", () => {
+  window.location.href = "../checkout.html";
+});
+
+view.appendChild(homeLinkContainer);
+view.appendChild(productsLinkContainer);
+view.appendChild(cartContainer);
+
+menu.addEventListener("click", () => {
+  view.classList.toggle("show-view");
+});
