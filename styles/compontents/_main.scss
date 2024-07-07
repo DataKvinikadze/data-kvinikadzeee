@@ -372,11 +372,13 @@
             justify-content: space-between;
             @include responsive(tablet) {
               display: grid;
-              grid-template-columns: 1fr 1fr;
-              grid-template-rows: 1fr 1fr;
+              grid-template-columns: auto auto;
+              grid-template-rows: auto auto;
               height: 408px;
               justify-content: center;
               align-items: center;
+              column-gap: 10px;
+              row-gap: 10px;
             }
             @include responsive(phone) {
               height: 836px;
@@ -405,10 +407,19 @@
             .card {
               border-radius: 22px;
               padding: 46px 36px;
-              max-width: 252px;
+              max-width: 256px;
               width: 100%;
               height: 199px;
               background-color: #101010;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              @include responsive(tablet) {
+                min-width: 200px;
+              }
+              @include responsive(phone) {
+                width: 100%;
+              }
               .card-content {
                 max-width: 179px;
                 height: 107px;

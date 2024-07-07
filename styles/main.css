@@ -733,11 +733,14 @@ header .underline {
 @media only screen and (max-width: 768px) {
   .main-page main #section-5 .section-container .section-content .section-cards {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
     height: 408px;
     justify-content: center;
     align-items: center;
+    -moz-column-gap: 10px;
+         column-gap: 10px;
+    row-gap: 10px;
   }
 }
 @media only screen and (max-width: 420px) {
@@ -769,10 +772,23 @@ header .underline {
 .main-page main #section-5 .section-container .section-content .section-cards .card {
   border-radius: 22px;
   padding: 46px 36px;
-  max-width: 252px;
+  max-width: 256px;
   width: 100%;
   height: 199px;
   background-color: #101010;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+@media only screen and (max-width: 768px) {
+  .main-page main #section-5 .section-container .section-content .section-cards .card {
+    min-width: 200px;
+  }
+}
+@media only screen and (max-width: 420px) {
+  .main-page main #section-5 .section-container .section-content .section-cards .card {
+    width: 100%;
+  }
 }
 .main-page main #section-5 .section-container .section-content .section-cards .card .card-content {
   max-width: 179px;
@@ -1740,30 +1756,6 @@ div.overlay.show {
 .checkout-page main {
   background-color: #f1f1f1;
 }
-.checkout-page main #goBack {
-  padding-top: 79px;
-}
-@media only screen and (max-width: 768px) {
-  .checkout-page main #goBack {
-    padding-top: 33px;
-  }
-}
-@media only screen and (max-width: 420px) {
-  .checkout-page main #goBack {
-    padding-top: 16px;
-  }
-}
-.checkout-page main #goBack .go-back {
-  max-width: 1150px;
-  padding: 0px 20px;
-  width: 100%;
-  margin: 0 auto;
-  display: flex;
-}
-.checkout-page main #goBack .go-back a {
-  color: #000000;
-  opacity: 0.5;
-}
 .checkout-page main .checkout-pop-up {
   display: none;
   z-index: 2;
@@ -1777,6 +1769,18 @@ div.overlay.show {
   transform: translate(-50%, -50%);
   left: 50%;
   top: 50%;
+}
+@media only screen and (max-width: 768px) {
+  .checkout-page main .checkout-pop-up {
+    max-width: 540px;
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 420px) {
+  .checkout-page main .checkout-pop-up {
+    max-width: 327px;
+    width: 100%;
+  }
 }
 .checkout-page main .checkout-pop-up .image-container {
   width: 64px;
@@ -1794,6 +1798,13 @@ div.overlay.show {
   letter-spacing: 1.14px;
   line-height: 36px;
   color: #000000;
+}
+@media only screen and (max-width: 420px) {
+  .checkout-page main .checkout-pop-up .text-container .thank-text {
+    font-size: 24px;
+    letter-spacing: 0.86px;
+    line-height: 28px;
+  }
 }
 .checkout-page main .checkout-pop-up .sub-container {
   margin-bottom: 129px;
@@ -1821,6 +1832,30 @@ div.overlay.show {
 }
 .checkout-page main .shown {
   display: block;
+}
+.checkout-page main #goBack {
+  padding-top: 79px;
+}
+@media only screen and (max-width: 768px) {
+  .checkout-page main #goBack {
+    padding-top: 33px;
+  }
+}
+@media only screen and (max-width: 420px) {
+  .checkout-page main #goBack {
+    padding-top: 16px;
+  }
+}
+.checkout-page main #goBack .go-back {
+  max-width: 1150px;
+  padding: 0px 20px;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+}
+.checkout-page main #goBack .go-back a {
+  color: #000000;
+  opacity: 0.5;
 }
 .checkout-page main #checkout {
   padding: 38px 0px 245px 0px;

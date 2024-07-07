@@ -38,43 +38,29 @@ const swiper = new Swiper(".swiper", {
 
 // Date difference
 
-let days = document.querySelector(".dayDif");
-let hours = document.querySelector(".hourDif");
-let minutes = document.querySelector(".minutDif");
-let seconds = document.querySelector(".secondDif");
+let daysNum = document.querySelector(".dayDif");
+let hoursNum = document.querySelector(".hourDif");
+let minutesNum = document.querySelector(".minutDif");
+let secondsNum = document.querySelector(".secondDif");
 // saboloo ricxvi
 
-let endDate = new Date("2024-06-30 23:59:59");
 // vigeb mocanemebs
-let EndMonth = endDate.getMonth() + 1;
-let endHours = endDate.getHours();
-let endMinutes = endDate.getMinutes();
-let endSeconds = endDate.getSeconds();
-let endDayOfMonth = endDate.getDate();
 
-setInterval(() => {
-  // axlandeli ricxvi
-  let currentTime = new Date();
+const end = new Date();
+end.setHours(end.getHours() + 24);
 
-  // vigeb mocanemebs
-  let currentMonth = currentTime.getMonth() + 1;
-  let currentHours = currentTime.getHours();
-  let currentMinutes = currentTime.getMinutes();
-  let currentSeconds = currentTime.getSeconds();
-  let currentDayOfMonth = currentTime.getDate();
+const interval = setInterval(() => {
+  const now = new Date();
+  const timeRemaining = end - now;
+  const days = Math.floor(timeRemaining / (1000 * 60 * 60 * 24));
+  const hours = Math.floor(
+    (timeRemaining % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
+  );
+  const minutes = Math.floor((timeRemaining % (1000 * 60 * 60)) / (1000 * 60));
+  const seconds = Math.floor((timeRemaining % (1000 * 60)) / 1000);
 
-  // gansxvavebebs vigeb
-  let differenceInDay = endDayOfMonth - currentDayOfMonth;
-  days.textContent = differenceInDay;
-  let differenceInHours = endHours - currentHours;
-  hours.textContent = differenceInHours;
-  let differenceInMinutes = endMinutes - currentMinutes;
-  minutes.textContent = differenceInMinutes;
-  let differenceInSeconds = endSeconds - currentSeconds;
-  seconds.textContent = differenceInSeconds;
-  let differenceInMonths = EndMonth - currentMonth;
-  // aq tu tveebshi moxda cvlileba differenceInDays emateba gasuli tvis dgeebis raodenoba
-  if (differenceInMonths > 0) {
-    differenceInDay = differenceInDay + 30 * differenceInMonths;
-  }
+  daysNum.textContent = days;
+  hoursNum.textContent = hours;
+  minutesNum.textContent = minutes;
+  secondsNum.textContent = seconds;
 }, 1000);

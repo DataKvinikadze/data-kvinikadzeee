@@ -11,27 +11,6 @@
   }
   main {
     background-color: #f1f1f1;
-    #goBack {
-      padding-top: 79px;
-      @include responsive(tablet) {
-        padding-top: 33px;
-      }
-      @include responsive(phone) {
-        padding-top: 16px;
-      }
-      .go-back {
-        max-width: 1150px;
-        padding: 0px 20px;
-        width: 100%;
-        margin: 0 auto;
-        display: flex;
-        a {
-          color: #000000;
-          opacity: 0.5;
-        }
-      }
-    }
-
     .checkout-pop-up {
       display: none;
       z-index: 2;
@@ -44,6 +23,14 @@
       transform: translate(-50%, -50%);
       left: 50%;
       top: 50%;
+      @include responsive(tablet) {
+        max-width: 540px;
+        width: 100%;
+      }
+      @include responsive(phone) {
+        max-width: 327px;
+        width: 100%;
+      }
       .image-container {
         width: 64px;
         height: 64px;
@@ -59,6 +46,11 @@
           letter-spacing: 1.14px;
           line-height: 36px;
           color: #000000;
+          @include responsive(phone) {
+            font-size: 24px;
+            letter-spacing: 0.86px;
+            line-height: 28px;
+          }
         }
       }
       .sub-container {
@@ -88,6 +80,26 @@
     }
     .shown {
       display: block;
+    }
+    #goBack {
+      padding-top: 79px;
+      @include responsive(tablet) {
+        padding-top: 33px;
+      }
+      @include responsive(phone) {
+        padding-top: 16px;
+      }
+      .go-back {
+        max-width: 1150px;
+        padding: 0px 20px;
+        width: 100%;
+        margin: 0 auto;
+        display: flex;
+        a {
+          color: #000000;
+          opacity: 0.5;
+        }
+      }
     }
 
     #checkout {
