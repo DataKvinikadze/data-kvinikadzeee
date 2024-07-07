@@ -188,16 +188,15 @@ checkOutBtn.addEventListener("click", (event) => {
   input.forEach((element, index) => {
     const inputValue = element.value.trim();
 
-    // if (inputValue === "") {
-    //   validationText[index].textContent = "You Must Enter a Value!";
-    //   validationText[index].style.display = "block";
-    //   input[index].classList.add("input-validation");
-    //   valid = false;
-    // } else {
-    //   // inputLable[index].classList.remove("id-error");
-    //   validationText[index].style.display = "none";
-    //   input[index].classList.remove("input-validation");
-    // }
+    if (inputValue === "") {
+      validationText[index].textContent = "You Must Enter a Value!";
+      validationText[index].style.display = "block";
+      input[index].classList.add("input-validation");
+      valid = false;
+    } else {
+      validationText[index].style.display = "none";
+      input[index].classList.remove("input-validation");
+    }
   });
   if (valid == true) {
     popUp.classList.add("shown");

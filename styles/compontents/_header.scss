@@ -1,4 +1,5 @@
 header {
+  font-family: "Manrope";
   background-color: $mainBlack;
   position: relative;
   z-index: 2;
@@ -11,12 +12,10 @@ header {
     display: flex;
     justify-content: center;
     @include responsive(tablet) {
-      max-width: 768px;
       height: 90px;
     }
 
     @include responsive(phone) {
-      max-width: 375px;
       height: 90px;
     }
 
@@ -47,9 +46,6 @@ header {
           @include responsive(tablet) {
             display: block;
           }
-          @include responsive(phone) {
-            display: block;
-          }
         }
       }
 
@@ -61,6 +57,22 @@ header {
         }
         @include responsive(phone) {
           display: none;
+        }
+        ul {
+          display: flex;
+          justify-content: space-between;
+          li {
+            a {
+              color: $mainWhite;
+              font-size: 13px;
+              font-weight: bold;
+              letter-spacing: 2px;
+            }
+            a:hover {
+              color: $hoverOrange;
+              transition: 250ms;
+            }
+          }
         }
       }
       .cart {
@@ -81,11 +93,5 @@ header {
     width: 100%;
     height: 1px;
     background-color: $underline;
-    @include responsive(tablet) {
-      max-width: 689px;
-    }
-    @include responsive(phone) {
-      max-width: 375px;
-    }
   }
 }

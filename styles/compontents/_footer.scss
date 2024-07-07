@@ -1,27 +1,18 @@
 footer {
   background-color: $mainBlack;
+  padding: 60px 0px 40px 0px;
   .footer-container {
     margin: 0 auto;
-    padding-top: 75px;
     max-width: 1440px;
     width: 100%;
     height: 365px;
     display: flex;
     justify-content: center;
-    @include responsive(tablet) {
-      max-width: 768px;
-      padding-top: 60px;
-    }
-    @include responsive(phone) {
-      height: 654px;
-    }
+    height: fit-content;
     .footer-content {
-      max-width: 1110px;
+      max-width: 1150px;
       width: 100%;
-      @include responsive(tablet) {
-        max-width: 689px;
-      }
-
+      padding: 0px 20px;
       .text-content {
         .logo {
           width: 143px;
@@ -31,29 +22,39 @@ footer {
           }
         }
         .nav-bar {
-          max-width: 400px;
-          width: 100%;
-          @include responsive(tablet) {
-            max-width: 427px;
-          }
           @include responsive(phone) {
-            max-width: 108px;
-            width: 100%;
             order: 1;
           }
-
           nav {
-            @include responsive(phone) {
-              max-width: 108px;
-            }
-          }
-          ul {
-            @include responsive(phone) {
-              height: 148px;
-              max-width: 108px;
+            ul {
+              display: flex;
+              justify-content: space-between;
+              max-width: 400px;
               width: 100%;
-              flex-direction: column;
-              text-align: center;
+              a {
+                color: $mainWhite;
+                font-size: 13px;
+                font-weight: bold;
+                letter-spacing: 2px;
+                &:hover {
+                  color: $hoverOrange;
+                  transition: 250ms;
+                  .icon {
+                    path {
+                      fill: $hoverOrange;
+                      transition: 250ms;
+                    }
+                  }
+                }
+              }
+              @include responsive(phone) {
+                height: fit-content;
+                max-width: 108px;
+                width: 100%;
+                row-gap: 16px;
+                flex-direction: column;
+                text-align: center;
+              }
             }
           }
         }
@@ -75,6 +76,12 @@ footer {
         .about {
           max-width: 540px;
           width: 100%;
+          p {
+            color: $mainWhite;
+            opacity: 0.5;
+            font-size: 15px;
+            line-height: 25px;
+          }
           @include responsive(tablet) {
             max-width: 689px;
           }
@@ -86,6 +93,9 @@ footer {
         }
         .copy-right {
           order: 5;
+          color: $mainWhite;
+          opacity: 0.5;
+          font-size: 15px;
         }
       }
 
